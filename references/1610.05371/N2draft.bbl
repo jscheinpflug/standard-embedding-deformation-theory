@@ -1,0 +1,414 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
+
+\bibitem{Belavin:1984vu}
+A.~A. Belavin, A.~M. Polyakov, and A.~B. Zamolodchikov, {\it {Infinite
+  Conformal Symmetry in Two-Dimensional Quantum Field Theory}},  {\em Nucl.
+  Phys.} {\bf B241} (1984) 333--380.
+
+\bibitem{Rattazzi:2008pe}
+R.~Rattazzi, V.~S. Rychkov, E.~Tonni, and A.~Vichi, {\it {Bounding scalar
+  operator dimensions in 4D CFT}},  {\em JHEP} {\bf 12} (2008) 031,
+  [\href{http://arxiv.org/abs/0807.0004}{{\tt arXiv:0807.0004}}].
+
+\bibitem{Rychkov:2009ij}
+V.~S. Rychkov and A.~Vichi, {\it {Universal Constraints on Conformal Operator
+  Dimensions}},  {\em Phys. Rev.} {\bf D80} (2009) 045006,
+  [\href{http://arxiv.org/abs/0905.2211}{{\tt arXiv:0905.2211}}].
+
+\bibitem{Poland:2010wg}
+D.~Poland and D.~Simmons-Duffin, {\it {Bounds on 4D Conformal and
+  Superconformal Field Theories}},  {\em JHEP} {\bf 05} (2011) 017,
+  [\href{http://arxiv.org/abs/1009.2087}{{\tt arXiv:1009.2087}}].
+
+\bibitem{Poland:2011ey}
+D.~Poland, D.~Simmons-Duffin, and A.~Vichi, {\it {Carving Out the Space of 4D
+  CFTs}},  {\em JHEP} {\bf 05} (2012) 110,
+  [\href{http://arxiv.org/abs/1109.5176}{{\tt arXiv:1109.5176}}].
+
+\bibitem{ElShowk:2012ht}
+S.~El-Showk, M.~F. Paulos, D.~Poland, S.~Rychkov, D.~Simmons-Duffin, and
+  A.~Vichi, {\it {Solving the 3D Ising Model with the Conformal Bootstrap}},
+  {\em Phys. Rev.} {\bf D86} (2012) 025022,
+  [\href{http://arxiv.org/abs/1203.6064}{{\tt arXiv:1203.6064}}].
+
+\bibitem{Kos:2013tga}
+F.~Kos, D.~Poland, and D.~Simmons-Duffin, {\it {Bootstrapping the $O(N)$ vector
+  models}},  {\em JHEP} {\bf 06} (2014) 091,
+  [\href{http://arxiv.org/abs/1307.6856}{{\tt arXiv:1307.6856}}].
+
+\bibitem{Beem:2013qxa}
+C.~Beem, L.~Rastelli, and B.~C. van Rees, {\it {The $\mathcal N=4$
+  Superconformal Bootstrap}},  {\em Phys. Rev. Lett.} {\bf 111} (2013) 071601,
+  [\href{http://arxiv.org/abs/1304.1803}{{\tt arXiv:1304.1803}}].
+
+\bibitem{Beem:2014zpa}
+C.~Beem, M.~Lemos, P.~Liendo, L.~Rastelli, and B.~C. van Rees, {\it {The
+  ${\mathcal N}=2$ superconformal bootstrap}},
+  \href{http://arxiv.org/abs/1412.7541}{{\tt arXiv:1412.7541}}.
+
+\bibitem{El-Showk:2014dwa}
+S.~El-Showk, M.~F. Paulos, D.~Poland, S.~Rychkov, D.~Simmons-Duffin, and
+  A.~Vichi, {\it {Solving the 3d Ising Model with the Conformal Bootstrap II.
+  c-Minimization and Precise Critical Exponents}},  {\em J. Stat. Phys.} {\bf
+  157} (2014) 869, [\href{http://arxiv.org/abs/1403.4545}{{\tt
+  arXiv:1403.4545}}].
+
+\bibitem{Chester:2014fya}
+S.~M. Chester, J.~Lee, S.~S. Pufu, and R.~Yacoby, {\it {The $ \mathcal{N}=8 $
+  superconformal bootstrap in three dimensions}},  {\em JHEP} {\bf 09} (2014)
+  143, [\href{http://arxiv.org/abs/1406.4814}{{\tt arXiv:1406.4814}}].
+
+\bibitem{Chester:2014mea}
+S.~M. Chester, J.~Lee, S.~S. Pufu, and R.~Yacoby, {\it {Exact Correlators of
+  BPS Operators from the 3d Superconformal Bootstrap}},  {\em JHEP} {\bf 03}
+  (2015) 130, [\href{http://arxiv.org/abs/1412.0334}{{\tt arXiv:1412.0334}}].
+
+\bibitem{Chester:2014gqa}
+S.~M. Chester, S.~S. Pufu, and R.~Yacoby, {\it {Bootstrapping $O(N)$ vector
+  models in 4 $< d <$ 6}},  {\em Phys. Rev.} {\bf D91} (2015), no.~8 086014,
+  [\href{http://arxiv.org/abs/1412.7746}{{\tt arXiv:1412.7746}}].
+
+\bibitem{Bae:2014hia}
+J.-B. Bae and S.-J. Rey, {\it {Conformal Bootstrap Approach to O(N) Fixed
+  Points in Five Dimensions}},  \href{http://arxiv.org/abs/1412.6549}{{\tt
+  arXiv:1412.6549}}.
+
+\bibitem{Chester:2015qca}
+S.~M. Chester, S.~Giombi, L.~V. Iliesiu, I.~R. Klebanov, S.~S. Pufu, and
+  R.~Yacoby, {\it {Accidental Symmetries and the Conformal Bootstrap}},
+  \href{http://arxiv.org/abs/1507.04424}{{\tt arXiv:1507.04424}}.
+
+\bibitem{Iliesiu:2015qra}
+L.~Iliesiu, F.~Kos, D.~Poland, S.~S. Pufu, D.~Simmons-Duffin, and R.~Yacoby,
+  {\it {Bootstrapping 3D Fermions}},
+  \href{http://arxiv.org/abs/1508.00012}{{\tt arXiv:1508.00012}}.
+
+\bibitem{Kos:2015mba}
+F.~Kos, D.~Poland, D.~Simmons-Duffin, and A.~Vichi, {\it {Bootstrapping the
+  O(N) Archipelago}},  \href{http://arxiv.org/abs/1504.07997}{{\tt
+  arXiv:1504.07997}}.
+
+\bibitem{Beem:2015aoa}
+C.~Beem, M.~Lemos, L.~Rastelli, and B.~C. van Rees, {\it {The $(2,0)$
+  superconformal bootstrap}},  \href{http://arxiv.org/abs/1507.05637}{{\tt
+  arXiv:1507.05637}}.
+
+\bibitem{Lemos:2015awa}
+M.~Lemos and P.~Liendo, {\it {Bootstrapping ${\mathcal N}=2$ chiral
+  correlators}},  \href{http://arxiv.org/abs/1510.03866}{{\tt
+  arXiv:1510.03866}}.
+
+\bibitem{Lin:2015wcg}
+Y.-H. Lin, S.-H. Shao, D.~Simmons-Duffin, Y.~Wang, and X.~Yin, {\it {N=4
+  Superconformal Bootstrap of the K3 CFT}},
+  \href{http://arxiv.org/abs/1511.04065}{{\tt arXiv:1511.04065}}.
+
+\bibitem{Candelas:1985en}
+P.~Candelas, G.~T. Horowitz, A.~Strominger, and E.~Witten, {\it {Vacuum
+  Configurations for Superstrings}},  {\em Nucl. Phys.} {\bf B258} (1985)
+  46--74.
+
+\bibitem{Gepner:1987qi}
+D.~Gepner, {\it {Space-Time Supersymmetry in Compactified String Theory and
+  Superconformal Models}},  {\em Nucl. Phys.} {\bf B296} (1988) 757.
+
+\bibitem{Gepner:1987vz}
+D.~Gepner, {\it {Exactly Solvable String Compactifications on Manifolds of
+  SU(N) Holonomy}},  {\em Phys. Lett.} {\bf B199} (1987) 380--388.
+
+\bibitem{Eguchi:1988vra}
+T.~Eguchi, H.~Ooguri, A.~Taormina, and S.-K. Yang, {\it {Superconformal
+  Algebras and String Compactification on Manifolds with SU(N) Holonomy}},
+  {\em Nucl. Phys.} {\bf B315} (1989) 193.
+
+\bibitem{Witten:1993yc}
+E.~Witten, {\it {Phases of N=2 theories in two-dimensions}},  {\em Nucl. Phys.}
+  {\bf B403} (1993) 159--222, [\href{http://arxiv.org/abs/hep-th/9301042}{{\tt
+  hep-th/9301042}}].
+
+\bibitem{Vafa:1988uu}
+C.~Vafa and N.~P. Warner, {\it {Catastrophes and the Classification of
+  Conformal Theories}},  {\em Phys. Lett.} {\bf B218} (1989) 51--58.
+
+\bibitem{Lerche:1989uy}
+W.~Lerche, C.~Vafa, and N.~P. Warner, {\it {Chiral Rings in N=2 Superconformal
+  Theories}},  {\em Nucl. Phys.} {\bf B324} (1989) 427--474.
+
+\bibitem{Cecotti:1989jc}
+S.~Cecotti, L.~Girardello, and A.~Pasquinucci, {\it {Nonperturbative Aspects
+  and Exact Results for the $N=2$ Landau-ginzburg Models}},  {\em Nucl. Phys.}
+  {\bf B328} (1989) 701--722.
+
+\bibitem{Cecotti:1989gv}
+S.~Cecotti, L.~Girardello, and A.~Pasquinucci, {\it {Singularity Theory and
+  $N=2$ Supersymmetry}},  {\em Int. J. Mod. Phys.} {\bf A6} (1991) 2427--2496.
+
+\bibitem{Martinec:1989in}
+E.~J. Martinec, {\it {CRITICALITY, CATASTROPHES AND COMPACTIFICATIONS}}, .
+
+\bibitem{Vafa:1990mu}
+C.~Vafa, {\it {Topological Landau-Ginzburg models}},  {\em Mod. Phys. Lett.}
+  {\bf A6} (1991) 337--346.
+
+\bibitem{Cecotti:1990kz}
+S.~Cecotti, {\it {N=2 Landau-Ginzburg versus Calabi-Yau sigma models:
+  Nonperturbative aspects}},  {\em Int. J. Mod. Phys.} {\bf A6} (1991)
+  1749--1814.
+
+\bibitem{Dixon:1986qv}
+L.~J. Dixon, D.~Friedan, E.~J. Martinec, and S.~H. Shenker, {\it {The Conformal
+  Field Theory of Orbifolds}},  {\em Nucl. Phys.} {\bf B282} (1987) 13--73.
+
+\bibitem{Vafa:1989xc}
+C.~Vafa, {\it {String Vacua and Orbifoldized L-G Models}},  {\em Mod. Phys.
+  Lett.} {\bf A4} (1989) 1169.
+
+\bibitem{Dixon:1987bg}
+L.~J. Dixon, {\it {SOME WORLD SHEET PROPERTIES OF SUPERSTRING
+  COMPACTIFICATIONS, ON ORBIFOLDS AND OTHERWISE}},  in {\em {Summer Workshop in
+  High-energy Physics and Cosmology Trieste, Italy, June 29-August 7, 1987}},
+  1987.
+
+\bibitem{Seiberg:1988pf}
+N.~Seiberg, {\it {Observations on the Moduli Space of Superconformal Field
+  Theories}},  {\em Nucl. Phys.} {\bf B303} (1988) 286.
+
+\bibitem{Kutasov:1988xb}
+D.~Kutasov, {\it {Geometry on the Space of Conformal Field Theories and Contact
+  Terms}},  {\em Phys. Lett.} {\bf B220} (1989) 153.
+
+\bibitem{Gukov:2002nw}
+S.~Gukov and C.~Vafa, {\it {Rational conformal field theories and complex
+  multiplication}},  {\em Commun. Math. Phys.} {\bf 246} (2004) 181--210,
+  [\href{http://arxiv.org/abs/hep-th/0203213}{{\tt hep-th/0203213}}].
+
+\bibitem{Eguchi:1988af}
+T.~Eguchi and A.~Taormina, {\it {On the Unitary Representations of $N=2$ and
+  $N=4$ Superconformal Algebras}},  {\em Phys. Lett.} {\bf B210} (1988) 125.
+
+\bibitem{Cecotti:1991me}
+S.~Cecotti and C.~Vafa, {\it {Topological antitopological fusion}},  {\em Nucl.
+  Phys.} {\bf B367} (1991) 359--461.
+
+\bibitem{Ooguri:1995wj}
+H.~Ooguri and C.~Vafa, {\it {Two-dimensional black hole and singularities of CY
+  manifolds}},  {\em Nucl. Phys.} {\bf B463} (1996) 55--72,
+  [\href{http://arxiv.org/abs/hep-th/9511164}{{\tt hep-th/9511164}}].
+
+\bibitem{Seiberg:1999xz}
+N.~Seiberg and E.~Witten, {\it {The D1 / D5 system and singular CFT}},  {\em
+  JHEP} {\bf 04} (1999) 017, [\href{http://arxiv.org/abs/hep-th/9903224}{{\tt
+  hep-th/9903224}}].
+
+\bibitem{Lunin:2000yv}
+O.~Lunin and S.~D. Mathur, {\it {Correlation functions for M**N / S(N)
+  orbifolds}},  {\em Commun. Math. Phys.} {\bf 219} (2001) 399--442,
+  [\href{http://arxiv.org/abs/hep-th/0006196}{{\tt hep-th/0006196}}].
+
+\bibitem{Douglas:aa}
+M.~R. Douglas, R.~L. Karp, S.~Lukic, and R.~Reinbacher, {\it Numerical
+  calabi-yau metrics},  \href{http://arxiv.org/abs/hep-th/0612075}{{\tt
+  hep-th/0612075}}.
+
+\bibitem{Ooguri:1996ck}
+H.~Ooguri, Y.~Oz, and Z.~Yin, {\it {D-branes on Calabi-Yau spaces and their
+  mirrors}},  {\em Nucl. Phys.} {\bf B477} (1996) 407--430,
+  [\href{http://arxiv.org/abs/hep-th/9606112}{{\tt hep-th/9606112}}].
+
+\bibitem{Candelas:1990rm}
+P.~Candelas, X.~C. De~La~Ossa, P.~S. Green, and L.~Parkes, {\it {A Pair of
+  Calabi-Yau manifolds as an exactly soluble superconformal theory}},  {\em
+  Nucl. Phys.} {\bf B359} (1991) 21--74.
+
+\bibitem{Witten:1991zz}
+E.~Witten, {\it {Mirror manifolds and topological field theory}},
+  \href{http://arxiv.org/abs/hep-th/9112056}{{\tt hep-th/9112056}}.
+
+\bibitem{Boucher:1986bh}
+W.~Boucher, D.~Friedan, and A.~Kent, {\it {Determinant Formulae and Unitarity
+  for the N=2 Superconformal Algebras in Two-Dimensions or Exact Results on
+  String Compactification}},  {\em Phys. Lett.} {\bf B172} (1986) 316.
+
+\bibitem{Hosomichi:2004ph}
+K.~Hosomichi, {\it {N=2 Liouville theory with boundary}},  {\em JHEP} {\bf 12}
+  (2006) 061, [\href{http://arxiv.org/abs/hep-th/0408172}{{\tt
+  hep-th/0408172}}].
+
+\bibitem{Simmons-Duffin:2015qma}
+D.~Simmons-Duffin, {\it {A Semidefinite Program Solver for the Conformal
+  Bootstrap}},  {\em JHEP} {\bf 06} (2015) 174,
+  [\href{http://arxiv.org/abs/1502.02033}{{\tt arXiv:1502.02033}}].
+
+\bibitem{zamolodchikov1987conformal}
+A.~B. Zamolodchikov, {\it Conformal symmetry in two-dimensional space:
+  recursion representation of conformal block},  {\em Theoretical and
+  Mathematical Physics} {\bf 73} (1987), no.~1 1088--1093.
+
+\bibitem{Belavin:2006zr}
+V.~A. Belavin, {\it {N=1 supersymmetric conformal block recursion relations}},
+  {\em Theor. Math. Phys.} {\bf 152} (2007) 1275--1285,
+  [\href{http://arxiv.org/abs/hep-th/0611295}{{\tt hep-th/0611295}}]. [Teor.
+  Mat. Fiz.152,476(2007)].
+
+\bibitem{Hadasz:2006qb}
+L.~Hadasz, Z.~Jaskolski, and P.~Suchanek, {\it {Recursion representation of the
+  Neveu-Schwarz superconformal block}},  {\em JHEP} {\bf 03} (2007) 032,
+  [\href{http://arxiv.org/abs/hep-th/0611266}{{\tt hep-th/0611266}}].
+
+\bibitem{Hadasz:2008dt}
+L.~Hadasz, Z.~Jaskolski, and P.~Suchanek, {\it {Elliptic recurrence
+  representation of the N=1 superconformal blocks in the Ramond sector}},  {\em
+  JHEP} {\bf 11} (2008) 060, [\href{http://arxiv.org/abs/0810.1203}{{\tt
+  arXiv:0810.1203}}].
+
+\bibitem{Giveon:1999px}
+A.~Giveon and D.~Kutasov, {\it {Little string theory in a double scaling
+  limit}},  {\em JHEP} {\bf 10} (1999) 034,
+  [\href{http://arxiv.org/abs/hep-th/9909110}{{\tt hep-th/9909110}}].
+
+\bibitem{Aharony:2003vk}
+O.~Aharony, B.~Fiol, D.~Kutasov, and D.~A. Sahakyan, {\it {Little string theory
+  and heterotic / type II duality}},  {\em Nucl. Phys.} {\bf B679} (2004)
+  3--65, [\href{http://arxiv.org/abs/hep-th/0310197}{{\tt hep-th/0310197}}].
+
+\bibitem{Aharony:2004xn}
+O.~Aharony, A.~Giveon, and D.~Kutasov, {\it {LSZ in LST}},  {\em Nucl. Phys.}
+  {\bf B691} (2004) 3--78, [\href{http://arxiv.org/abs/hep-th/0404016}{{\tt
+  hep-th/0404016}}].
+
+\bibitem{Chang:2014jta}
+C.-M. Chang, Y.-H. Lin, S.-H. Shao, Y.~Wang, and X.~Yin, {\it {Little String
+  Amplitudes (and the Unreasonable Effectiveness of 6D SYM)}},  {\em JHEP} {\bf
+  12} (2014) 176, [\href{http://arxiv.org/abs/1407.7511}{{\tt
+  arXiv:1407.7511}}].
+
+\bibitem{Hori:2001ax}
+K.~Hori and A.~Kapustin, {\it {Duality of the fermionic 2-D black hole and N=2
+  liouville theory as mirror symmetry}},  {\em JHEP} {\bf 08} (2001) 045,
+  [\href{http://arxiv.org/abs/hep-th/0104202}{{\tt hep-th/0104202}}].
+
+\bibitem{Baggio:2012rr}
+M.~Baggio, J.~de~Boer, and K.~Papadodimas, {\it {A non-renormalization theorem
+  for chiral primary 3-point functions}},  {\em JHEP} {\bf 07} (2012) 137,
+  [\href{http://arxiv.org/abs/1203.1036}{{\tt arXiv:1203.1036}}].
+
+\bibitem{Odake:1988bh}
+S.~Odake, {\it {Extension of $N=2$ Superconformal Algebra and Calabi-yau
+  Compactification}},  {\em Mod. Phys. Lett.} {\bf A4} (1989) 557.
+
+\bibitem{Odake:1989ev}
+S.~Odake, {\it {C = 3-$d$ Conformal Algebra With Extended Supersymmetry}},
+  {\em Mod. Phys. Lett.} {\bf A5} (1990) 561.
+
+\bibitem{Keller:2012mr}
+C.~A. Keller and H.~Ooguri, {\it {Modular Constraints on Calabi-Yau
+  Compactifications}},  {\em Commun. Math. Phys.} {\bf 324} (2013) 107--127,
+  [\href{http://arxiv.org/abs/1209.4649}{{\tt arXiv:1209.4649}}].
+
+\bibitem{Friedan:2013cba}
+D.~Friedan and C.~A. Keller, {\it {Constraints on 2d CFT partition functions}},
+   {\em JHEP} {\bf 10} (2013) 180, [\href{http://arxiv.org/abs/1307.6562}{{\tt
+  arXiv:1307.6562}}].
+
+\bibitem{Ribault:2005wp}
+S.~Ribault and J.~Teschner, {\it {H+(3)-WZNW correlators from Liouville
+  theory}},  {\em JHEP} {\bf 06} (2005) 014,
+  [\href{http://arxiv.org/abs/hep-th/0502048}{{\tt hep-th/0502048}}].
+
+\bibitem{Zamolodchikov:1985ie}
+A.~B. Zamolodchikov, {\it {CONFORMAL SYMMETRY IN TWO-DIMENSIONS: AN EXPLICIT
+  RECURRENCE FORMULA FOR THE CONFORMAL PARTIAL WAVE AMPLITUDE}},  {\em Commun.
+  Math. Phys.} {\bf 96} (1984) 419--422.
+
+\bibitem{Zamolodchikov:1995aa}
+A.~B. Zamolodchikov and A.~B. Zamolodchikov, {\it {Structure constants and
+  conformal bootstrap in Liouville field theory}},  {\em Nucl. Phys.} {\bf
+  B477} (1996) 577--605, [\href{http://arxiv.org/abs/hep-th/9506136}{{\tt
+  hep-th/9506136}}].
+
+\bibitem{Kos:2014aa}
+F.~Kos, D.~Poland, and D.~Simmons-Duffin, {\it Bootstrapping mixed correlators
+  in the 3d ising model},  {\em JHEP} {\bf 1411} (2014) 109,
+  [\href{http://arxiv.org/abs/1406.4858}{{\tt arXiv:1406.4858}}].
+
+\bibitem{Bertolini:2014ela}
+M.~Bertolini, I.~V. Melnikov, and M.~R. Plesser, {\it {Accidents in (0,2)
+  Landau-Ginzburg theories}},  {\em JHEP} {\bf 12} (2014) 157,
+  [\href{http://arxiv.org/abs/1405.4266}{{\tt arXiv:1405.4266}}].
+
+\bibitem{arnold1985singularities}
+V.~Arnold, A.~Varchenko, and S.~Gusein-Zade, {\em Singularities of
+  Differentiable Maps: Volume I: The Classification of Critical Points Caustics
+  and Wave Fronts}.
+\newblock Monographs in Mathematics. Birkh{\"a}user Boston, 1985.
+
+\bibitem{SVP}
+M.~Ajtai, {\it {The shortest vector problem in $L^2$ is NP-hard for randomized
+  reductions (extended abstract)}},  {\em Proceedings of the thirtieth Annual
+  ACM Symposium on Theory of Computing - STOC '98, Dallas, Texas} (1998)
+  10--19.
+
+\bibitem{Rumsfeld}
+D.~Rumsfeld, ``{DoD News Briefing}.'' 2002.
+
+\bibitem{Hellerman:2009bu}
+S.~Hellerman, {\it {A Universal Inequality for CFT and Quantum Gravity}},  {\em
+  JHEP} {\bf 08} (2011) 130, [\href{http://arxiv.org/abs/0902.2790}{{\tt
+  arXiv:0902.2790}}].
+
+\bibitem{Qualls:2013eha}
+J.~D. Qualls and A.~D. Shapere, {\it {Bounds on Operator Dimensions in 2D
+  Conformal Field Theories}},  {\em JHEP} {\bf 05} (2014) 091,
+  [\href{http://arxiv.org/abs/1312.0038}{{\tt arXiv:1312.0038}}].
+
+\bibitem{Collier:2016cls}
+S.~Collier, Y.-H. Lin, and X.~Yin, {\it {Modular Bootstrap Revisited}},
+  \href{http://arxiv.org/abs/1608.06241}{{\tt arXiv:1608.06241}}.
+
+\bibitem{Chun:1989se}
+E.~J. Chun, J.~Mas, J.~Lauer, and H.~P. Nilles, {\it {Duality and
+  Landau-ginzburg Models}},  {\em Phys. Lett.} {\bf B233} (1989) 141--146.
+
+\bibitem{Witten:1993jg}
+E.~Witten, {\it {On the Landau-Ginzburg description of N=2 minimal models}},
+  {\em Int. J. Mod. Phys.} {\bf A9} (1994) 4783--4800,
+  [\href{http://arxiv.org/abs/hep-th/9304026}{{\tt hep-th/9304026}}].
+
+\bibitem{Dobrev:1986hq}
+V.~K. Dobrev, {\it {Characters of the Unitarizable Highest Weight Modules Over
+  the $N=2$ Superconformal Algebras}},  {\em Phys. Lett.} {\bf B186} (1987) 43.
+
+\bibitem{Kiritsis:1986rv}
+E.~Kiritsis, {\it {Character Formulae and the Structure of the Representations
+  of the $N=1$, $N=2$ Superconformal Algebras}},  {\em Int. J. Mod. Phys.} {\bf
+  A3} (1988) 1871.
+
+\bibitem{Matsuo:1986cj}
+Y.~Matsuo, {\it {Character Formula of C < 1 Unitary Representation of $N=2$
+  Superconformal Algebra}},  {\em Prog. Theor. Phys.} {\bf 77} (1987) 793.
+
+\bibitem{Candelas:1993nd}
+P.~Candelas, E.~Derrick, and L.~Parkes, {\it {Generalized Calabi-Yau manifolds
+  and the mirror of a rigid manifold}},  {\em Nucl. Phys.} {\bf B407} (1993)
+  115--154, [\href{http://arxiv.org/abs/hep-th/9304045}{{\tt hep-th/9304045}}].
+
+\bibitem{Eguchi:2003ik}
+T.~Eguchi and Y.~Sugawara, {\it {Modular bootstrap for boundary N = 2 Liouville
+  theory}},  {\em JHEP} {\bf 01} (2004) 025,
+  [\href{http://arxiv.org/abs/hep-th/0311141}{{\tt hep-th/0311141}}].
+
+\bibitem{Eguchi:2004ik}
+T.~Eguchi and Y.~Sugawara, {\it {Conifold type singularities, N=2 Liouville and
+  SL(2:R)/U(1) theories}},  {\em JHEP} {\bf 01} (2005) 027,
+  [\href{http://arxiv.org/abs/hep-th/0411041}{{\tt hep-th/0411041}}].
+
+\bibitem{Distler:1988ms}
+J.~Distler and B.~R. Greene, {\it {Some Exact Results on the Superpotential
+  from Calabi-Yau Compactifications}},  {\em Nucl. Phys.} {\bf B309} (1988)
+  295--316.
+
+\bibitem{Mussardo:1988av}
+G.~Mussardo, G.~Sotkov, and M.~Stanishkov, {\it {N=2 SUPERCONFORMAL MINIMAL
+  MODELS}},  {\em Int. J. Mod. Phys.} {\bf A4} (1989) 1135.
+
+\end{thebibliography}\endgroup
