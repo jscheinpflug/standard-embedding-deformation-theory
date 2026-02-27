@@ -1,0 +1,252 @@
+\documentclass[12pt]{article}
+\pdfoutput=1
+
+
+% Use Chancery Font
+\DeclareFontFamily{OT1}{pzc}{}
+\DeclareFontShape{OT1}{pzc}{m}{it}{<-> s * [1.10] pzcmi7t}{}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+\newcommand{\josh}[1]{\textcolor{blue}{[Joshua: #1]}}
+\newcommand{\cw}[1]{\textcolor{gray}{[Charles: #1]}}
+%\usepackage{chngcntr}
+%\counterwithout{equation}{section}
+
+
+
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\wt}[1]{\widetilde{#1}}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\hmch}{\hat{\mc{H}}}
+\newcommand{\citeme}[1][]{{\color{red}[*#1]}}
+
+
+
+\newcommand{\swisswatch}[1][.3em]{%
+	\tikz[baseline=-0.5ex, x=#1, y=#1]{%
+		% geometry
+		\coordinate (C) at (0,0);     % center
+		\def\Rcase{1.0}               % outer case radius
+		\def\Rdial{0.78}              % inner dial radius
+
+%		% soft shadow
+%		\fill[black, opacity=0.12] (0,-1.25) ellipse (1.25 and 0.26);
+
+		% straps (top & bottom)
+		\fill[gray!35!black!20!white, rounded corners=0.35]
+		(-0.55,1.05) rectangle (0.55,1.75);
+		\fill[gray!35!black!20!white, rounded corners=0.35]
+		(-0.55,-1.75) rectangle (0.55,-1.05);
+
+		% case
+		\shade[inner color=gray!5!white, outer color=gray!45!black!20!white]
+		(C) circle (\Rcase);
+
+		% crown (winder on the right)
+		\fill[gray!50!black!30!white, rounded corners=0.25]
+		(\Rcase+0.10,-0.20) rectangle (\Rcase+0.45,0.20);
+
+		% dial background
+		\fill[white] (C) circle (\Rdial);
+
+		% minute markers (subtle) – use polar coordinates
+		\foreach \a in {0,6,...,354} {
+			\draw[gray!50, line cap=round, line width=0.018]
+			(\a:\Rdial-0.06) -- (\a:\Rdial-0.01);
+		}
+
+		% hour markers (stronger) – use polar coordinates
+		\foreach \a in {0,30,...,330} {
+			\draw[gray!30!black, line cap=round, line width=0.05]
+			(\a:\Rdial-0.16) -- (\a:\Rdial-0.02);
+		}
+
+		% hands
+		% hour hand
+		\draw[gray!30!black, line cap=round, line width=0.09]
+		(C) -- ++(140:0.42);
+		% minute hand
+		\draw[gray!20!black, line cap=round, line width=0.07]
+		(C) -- ++(20:0.65);
+		% seconds hand (Swiss red)
+		\draw[red!80!black, line cap=round, line width=0.035]
+		(C) -- ++(285:0.72);
+
+		% central pinion
+		\fill[gray!20!black] (C) circle (0.07);
+		\fill[white, opacity=0.7] (0.04,0.04) circle (0.04);
+
+		% Swiss cross at 12 o'clock on the dial
+		\begin{scope}
+			\clip (C) circle (\Rdial);
+			\begin{scope}[shift={(0,0.42)}]
+				\fill[red!85!black] (-0.16,-0.09) rectangle (0.16,0.09);
+				\fill[white]
+				(-0.07,-0.03) rectangle (0.07,0.03); % horizontal bar
+				\fill[white]
+				(-0.03,-0.07) rectangle (0.03,0.07); % vertical bar
+			\end{scope}
+		\end{scope}
+
+		% subtle outer outline
+		\draw[line width=0.03em, draw=gray!40!black!60!white]
+		(C) circle (\Rcase);
+	}%
+}
+
+
+
+\usepackage{stmaryrd}
+
+
+\usepackage{draft}
+\usepackage[weather]{ifsym}
+
+\usepackage{hyperref}
+\usepackage{graphicx,color,subfig}
+\usepackage{cite}
+\usepackage{mciteplus}
+\usepackage{skak}
+\usepackage{empheq}
+\usepackage{tikz}
+\usepackage{bbm}
+
+% Use Chancery Font
+\DeclareFontFamily{OT1}{pzc}{}
+\DeclareFontShape{OT1}{pzc}{m}{it}{<-> s * [1.10] pzcmi7t}{}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{snakes}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{bending}
+\tikzset{snake it/.style={decorate, decoration=snake}}
+\usetikzlibrary{shapes.misc}
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt.
+cross/.default={1pt}}
+
+\usepackage[T1]{fontenc}
+\usepackage{esint}
+\usepackage{lmodern}
+
+\newcommand{\fixme}[1]{{\bf {\color{red}[#1]}}}
+\newcommand{\vv}[1]{\left\langle #1 \right\rangle}
+\newcommand{\un}[1]{\underline{#1}}
+\newcommand{\BL}[1]{{ {\color{blue}[#1]}}}
+
+\newcommand{\bgcom}[1]{\fixme{BG: #1}}
+
+\def\be#1\ee{\begin{align}#1\end{align}}
+\newcommand\nn{\nonumber}
+
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\bz}{\bar{z}}
+
+\definecolor{dark green}{rgb}{0.7,1,0.64}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{myStyle}{
+    belowcaptionskip=1\baselineskip,
+    breaklines=true,
+    frame=none,
+    numbers=none,
+    basicstyle=\footnotesize\ttfamily,
+    keywordstyle=\bfseries\color{green!40!black},
+    commentstyle=\itshape\color{purple!40!black},
+    identifierstyle=\color{blue},
+    backgroundcolor=\color{gray!10!white},
+    tabsize=2,
+}
+
+
+
+\lstset{style=myStyle}
+\usepackage{array}
+
+\begin{document}
+
+\unitlength = .8mm
+
+
+\section{Heterotic worldsheet theory of standing embedding}
+
+We begin with the heterotic worldsheet theory based on a $c=9$ $(2,2)$ SCFT combined with 26 chiral fermions $\lambda^{A'}$, 4 free bosons $X^\mu$ and 4 anti-chiral free fermions $\wt\psi^\mu$, along with $b,c,\wt b,\wt c, \wt \B,\wt \C$ ghost system. Let $(q, \wt q)$ be the (left,right) R-charge of the $(2,2)$ SCFT (integer valued in the NS sector and half-integer valued in the R sector), and $(F, \wt F)$ be the fermions numbers of $\lambda^{A'}$ and $\wt\psi^\mu,\wt\B,\wt\C$ respectively (similarly half-integer valued in the R sector). The GSO projection for the standard embedding of $SO(32)$ heterotic string is
+\ie
+F+q, ~\wt F + \wt q\in 2 \mathbb{Z}.
+\fe
+For $E_8\times E_8$ heterotic string, we impose the GSO projection to the $(2,2)$ SCFT combined with 10 chiral fermions, and separately the GSO projection on the remaining 16 chiral fermions to give the $(E_8)_1$ chiral CFT.
+
+In particular, the $U(1)$ gauge symmetry of the 4D effective theory is associated with the $U(1)_R$ current of the holomorphic ${\cal N}=2$ superconformal algebra on the worldsheet. The charged massless fields organized into 4D ${\cal N}=1$ chiral multiplets, consisting of complex scalars and chiral fermions represented by NS and R sector vertex operators of the form
+\fixme{The operators below are in the 10 and 1 under decomposition $27 \to 16 \oplus 10 \oplus 1$ of $E_6$ under $SO(10)$, the 16 is in the R sector. (2.3) is then $27^3$ superpotential}
+\ie\label{nsrmasslfrbsf}
+& e^{-{\wt\phi}}    {\cal O}^{\rm NS} \lambda^{A'} e^{ik\cdot X},~~~~e^{-{\wt\phi\over 2}} \wt S_{\A} {\cal O}^{\rm R} \lambda^{A'} e^{ik\cdot X},
+\\
+&  {\rm and}~~~ e^{-{\wt\phi}} {\cal O}'^{\rm NS} e^{ik\cdot X},~~~~ e^{-{\wt\phi\over 2}} \wt S_{\A} {\cal O}'^{\rm R} e^{ik\cdot X},
+\fe
+where $\wt S_\A$ is a chiral spin field of the $\mathbb{R}^{1,3}$ sector, ${\cal O}^{\rm NS}$ is a chiral primary of the $(2,2)$ SCFT with weight $({1\over 2}, {1\over 2})$ and R-charge $(q,\wt q) = (\pm 1, 1)$, and ${\cal O}^{\rm R}$ is an (NS,R) sector operator of the $(2,2)$ SCFT with weight $({1\over 2},{3\over 8})$ and R-charge $(q,\wt q) = (\pm 1, -{1\over 2})$, related to ${\cal O}^{\rm NS}$ by half unit anti-holomorphic spectral flow, i.e.
+\ie\label{omrspecfl}
+{\cal O}^{\rm R} = e^{-{i\over 2} \sqrt{3} \wt \varphi} {\cal O}^{\rm NS},
+\fe
+where $\wt\varphi$ is an anti-chiral boson defined as
+\ie\label{thetaggsp}
+\wt J \simeq i \sqrt{3} \bar\partial\wt \varphi,~~~~ \wt {\bf X}^\pm \simeq e^{\pm i \sqrt{3} \wt \varphi},~~~~ \wt \Theta_\pm \simeq e^{ \pm {i\over 2} \sqrt{3} \wt \varphi },
+\fe
+and the RHS of (\ref{omrspecfl}) is understood as normal ordered with respect to $\wt\varphi$ (which also appears in ${\cal O}^{\rm NS}$). ${\cal O}'^{\rm NS}$ is a chiral primary of the $(2,2)$ SCFT of weight $(1, {1\over 2})$ and R-charge $(q,\wt q) = (\mp 2, 1)$, related to ${\cal O}^{\rm NS}$ by $\mp 1$ unit of holomorphic spectral flow, and similarly ${\cal O}'^{\rm R}$ is an (NS,R) sector operator of weight $(1, {3\over 8})$ and R-charge $(q,\wt q) = (\mp 2, -{1\over 2})$.
+
+There are also uncharged massless fields involving $G_{-{1\over 2}}^\pm$ descendants of $(2,2)$ chiral primaries, of the form
+\ie\label{nsrmasslfrbsfneutral}
+e^{-{\wt\phi}}  G_{-{1\over 2}}^\pm  {\cal O}^{{\rm NS},\mp} e^{ik\cdot X},~~~~e^{-{\wt\phi\over 2}} \wt S_{\A} G_{-{1\over 2}}^\pm  {\cal O}^{{\rm R},\mp} e^{ik\cdot X},
+\fe
+where the superscript $\mp$ on ${\cal O}^{\rm NS}$ and ${\cal O}^{\rm R}$ indicate their holomorphic R-charge $q=\mp 1$.
+
+\section{4D ${\cal N}=1$ Superpotential}
+
+The cubic superpotential terms, or equivalently the Yukawa couplings, are computed by the 3-point functions of an NS vertex operator of the form
+\ie{}
+e^{-{\wt\phi}}  {\cal O}^{\rm NS} \lambda^{A'}, ~~~~ e^{-{\wt\phi}}  G_{-{1\over 2}}^\pm  {\cal O}^{{\rm NS},\mp}, ~~~~ e^{-{\wt\phi}} {\cal O}'^{\rm NS} ,
+\fe
+and a pair of R vertex operators of the form
+\ie
+e^{-{\wt\phi\over 2}} \wt S_{\A} {\cal O}^{\rm R} \lambda^{A'},~~~~ e^{-{\wt\phi\over 2}} \wt S_{\A} G_{-{1\over 2}}^\pm  {\cal O}^{{\rm R},\mp}  ,~~~~  e^{-{\wt\phi\over 2}} \wt S_{\A} {\cal O}'^{\rm R}.
+\fe
+An example of a potentially non-vanishing 3-point correlator as constrained by global symmetries is
+\ie{}
+& \left\langle e^{-{\wt\phi}} {\cal O}{}'^{{\rm NS},(\pm 2, 1)} e^{-{\wt\phi\over 2}} \wt S_{\A} {\cal O}{}^{{\rm R},(\mp 1, -{1\over 2})} \lambda^{A'} e^{-{\wt\phi\over 2}} \wt S_{\B} {\cal O}{}^{{\rm R},(\mp 1, -{1\over 2})} \lambda^{B'} \right\rangle
+\\
+& = \epsilon_{\A\B}\delta^{A'B'} \left\langle {\cal O}{}'^{{\rm NS},(\pm 2, 1)} {\cal O}{}^{{\rm R},(\mp 1, -{1\over 2})} {\cal O}{}^{{\rm R},(\mp 1, -{1\over 2})} \right\rangle^{(2,2)~{\rm SCFT}}.
+\fe
+Another example of such a 3-point function is
+\ie
+\left\langle {\cal O}^{{\rm NS},(\pm 1, 1)} {\cal O}{}^{{\rm R},(\pm 1, -{1\over 2})} {\cal O}'{}^{{\rm R},(\mp 2, -{1\over 2})} \right\rangle^{(2,2)~{\rm SCFT}},
+\fe
+which is related by spectral flow or spacetime supersymmetry, and corresponds to the same cubic superpotential term.
+
+One may also consider the 3-point function
+\ie{}
+& \left\langle e^{-{\wt\phi}} G_{-{1\over 2}}^\pm {\cal O}{}^{{\rm NS},(\mp 1, 1)} e^{-{\wt\phi\over 2}} \wt S_{\A} {\cal O}{}^{{\rm R},(\pm 1, -{1\over 2})} \lambda^{A'} e^{-{\wt\phi\over 2}} \wt S_{\B} {\cal O}{}^{{\rm R},(\mp 1, -{1\over 2})} \lambda^{B'} \right\rangle
+\\
+& = \epsilon_{\A\B}\delta^{A'B'} \left\langle G_{-{1\over 2}}^\pm {\cal O}{}^{{\rm NS},(\pm 1, 1)} {\cal O}{}^{{\rm R},(\pm 1, -{1\over 2})} {\cal O}{}^{{\rm R},(\mp 1, -{1\over 2})} \right\rangle^{(2,2)~{\rm SCFT}}
+\fe
+which satisfies R-charge conservation. However, the correlator in question actually vanishes due to the Ward identities associated with the holomorphic ${\cal N}=2$ SCA. This can be seen by representing $G_{-{1\over 2}}^\pm$ acting on the chiral primary at $z=\infty$ as $\oint {dz\over 2\pi i} f(z) G^\pm(z)$, where $f(z) = z + a_0  + a_1 z^{-1} + \cdots$ as $z\to \infty$. In particular we can choose $f(z) = z$, so that by shrinking the contour we obtain $G^\pm_{1\over 2}$ acting on the operator at $z=0$ and $G^\pm_{-{1\over 2}}$ acting on the operator at $z=1$, and the result vanishes as the operator at $z=0$ is a chiral primary of R-charge $q=\pm 1$. This conclusion is also consistent with the selection rule in section 2.2 (c) of 1610.05371.
+
+So we learn that the cubic superpotential is governed by the chiral ring of the $(2,2)$ SCFT. We now focus on the flat directions with respect to the cubic superpotential, and ask if there are higher order obstructions to deforming the vacuum.
+
+\section{Perturbative SFT solution}
+
+
+
+\bibliographystyle{JHEP}
+\bibliography{stringrefs}
+
+
+\end{document}
