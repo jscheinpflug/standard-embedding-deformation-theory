@@ -376,7 +376,7 @@ which is model-dependent but not forbidden by the general selection rules.
 A Yukawa with exactly two current-type multiplets would require an internal holomorphic one-point function and therefore vanishes unless the remaining insertion is the identity, which is not the case for a marginal deformation.
 \end{enumerate}
 
-The vanishing (or not) of these cubic couplings provides the first, model-independent obstruction test for deformations leaving the standard embedding locus. Higher-order obstructions are then governed by higher-point functions, which we organize in section 4 using conformal perturbation theory.
+The vanishing (or not) of these cubic couplings provides the first, model-independent obstruction test for deformations leaving the standard embedding locus. Higher-order obstructions are then governed by higher-point functions, which we organize in section~\ref{sec:cpt_obstructions} using conformal perturbation theory.
 
 \subsection{Large-volume interpretation}
 
@@ -454,7 +454,76 @@ with $\rho_{\bar i\,jk}\in H^{1}(X,\wedge^2 T_X^\vee)$ and $\rho_{\bar i}{}^{jk}
 These are the long-multiplet directions of the form (\ref{defq0primary}). In a geometric sigma model they arise only when there are additional holomorphic weight-one primaries of zero $U(1)_R$ charge (beyond those in the ${\cal N}=2$ algebra). At free-field points (e.g.\ toroidal orbifolds) one can take such a primary to be a holomorphic current $j_a(z)$ (for instance $j_a=i\partial Y^a$ on a torus), and then ${\cal P}^{\rm NS}_{(0,1)}\sim j_a(z)\,\wt\psi^{\bar i}(\bz)$ describes a current--current marginal deformation, including Wilson-line moduli.
 \end{enumerate}
 
-\section{Conformal perturbation theory and obstructions}
+\section{Geometric constraints away from the $(2,2)$ locus at large volume}\label{sec:geom_constraints}
+
+Section 3 classified the supersymmetric marginal deformations that exist at a standard-embedding $(2,2)$ point, using only the intrinsic operator algebra of a generic $(2,2)$ SCFT. When the worldsheet theory admits a weakly coupled large-volume description as a $(0,2)$ nonlinear sigma model (NLSM), there is an independent and very concrete description of \emph{gauge-neutral} first-order deformations in terms of differential-geometric data and cohomology. A particularly clear tree-level worldsheet derivation is due to Melnikov and Sharpe \cite{Melnikov:2011aa}. In this section we summarize their constraints and explain how they appear from the abstract $(0,2)$ CFT point of view.
+
+\subsection{Marginal deformations are $(0,2)$ F-terms}
+
+In a unitary $(0,2)$ SCFT, a marginal supersymmetric deformation must be an F-term built from a right-moving chiral primary operator $\mc{X}$ with quantum numbers $(h,\wt h)=(1,{1\over 2})$ and right-moving R-charge $\wt q=+1$ \cite{Melnikov:2011aa}. In the operator language used above, this is precisely the structure of (\ref{rFterm}): the integrated deformation is obtained by acting with $\wt G^-_{-{1\over 2}}$ on a right-chiral primary of $(\wt h,\wt q)=({1\over 2},1)$.
+
+\subsection{Tree-level NLSM constraints and equivalences}
+
+Consider the tree-level $(0,2)$ NLSM with target a complex manifold $X$ and a holomorphic vector bundle $E\to X$ (encoding the left-moving gauge degrees of freedom), in the presence of NS flux $H$ \cite{Melnikov:2011aa}. In the large-volume limit, a chiral primary $\mc{X}$ of the appropriate weights and charges has a classical representative determined by a triple
+\ie\label{eq:geom_triple}
+(Z,Y,\Lambda)\in \Omega^{0,1}(X,T_X)\oplus \Omega^{1,1}(X)\oplus \Omega^{0,1}(X,\mathrm{End}\,E),
+\fe
+modulo local equivalences coming from gauge transformations and field redefinitions. Requiring chirality of the corresponding operator up to the NLSM equations of motion gives the coupled constraints \cite{Melnikov:2011aa}
+\ie\label{eq:geom_cond}
+\bar\partial Z \;=\; 0,\qquad
+\bar\partial Y \;=\; \iota_Z H,\qquad
+\bar\partial_E \Lambda \;=\; \iota_Z {\cal F}.
+\fe
+where ${\cal F}$ is the $(1,1)$ curvature of the holomorphic connection on $E$, $\bar\partial_E$ is the corresponding Dolbeault operator, and $\iota_Z$ denotes contraction of the $(0,1)$-form $Z$ into the first index of $H$ or ${\cal F}$. Distinct triples related by local field redefinitions and gauge transformations correspond to the same deformation; explicitly, the equivalences generalize the familiar shifts by $\bar\partial$-exact forms and bundle gauge transformations, and are given in \cite{Melnikov:2011aa}.
+
+Two qualitative features of (\ref{eq:geom_cond}) are important for understanding deformations away from the $(2,2)$ locus:
+\begin{enumerate}
+\item The Hermitian deformations $Y$ and complex-structure deformations $Z$ \emph{mix} in the presence of $H$ through the $\bar\partial Y=\iota_Z H$ relation in (\ref{eq:geom_cond}). Even at first order, the ``K\"ahler moduli'' are not independent of complex-structure data once the target is non-K\"ahler.
+\item The bundle deformation $\Lambda$ and complex-structure deformation $Z$ are linked by the $\bar\partial_E\Lambda=\iota_Z{\cal F}$ relation in (\ref{eq:geom_cond}). In particular, a complex-structure deformation is allowed only if the bundle can be deformed simultaneously so that it remains holomorphic.
+\end{enumerate}
+
+\subsection{Calabi--Yau compactifications and the Atiyah constraint}
+
+Now specialize to the large-volume regime of a Calabi--Yau target with $H=0$ and a stable holomorphic bundle $E\to X$. Then (\ref{eq:geom_cond}) reduces to
+\ie
+\bar\partial Z=0,\qquad \bar\partial Y=0,\qquad \bar\partial_E\Lambda=\iota_Z {\cal F},
+\fe
+again modulo the equivalences of \cite{Melnikov:2011aa}. The first two conditions imply that $Z$ and $Y$ define Dolbeault cohomology classes
+\ie
+\relax [Z]\in H^1(X,T_X),\qquad [Y]\in H^1(X,T_X^\vee).
+\fe
+However, the third equation is qualitatively different: because ${\cal F}$ is a $(1,1)$-form with values in $\mathrm{End}\,E$, the contraction $\iota_Z{\cal F}$ is a $(0,2)$-form valued in $\mathrm{End}\,E$, and therefore defines a cohomology class
+\ie\label{eq:Atiyah_map}
+\alpha([Z])\;\equiv\;[\iota_Z{\cal F}]\;\in\; H^2(X,\mathrm{End}\,E).
+\fe
+A solution $\Lambda$ to $\bar\partial_E\Lambda=\iota_Z {\cal F}$ exists if and only if $\alpha([Z])=0$. This is the Atiyah/holomorphy constraint: only those complex-structure deformations that annihilate the Atiyah class of $E$ survive as genuine first-order deformations of the heterotic vacuum \cite{Atiyah:1957xx,Anderson:2011ty}.
+
+Equivalently, the coupled $(Z,\Lambda)$ data are naturally packaged by the extension bundle $Q$ defined by the short exact sequence \cite{Atiyah:1957xx,Anderson:2011ty,Melnikov:2011aa}
+\ie\label{eq:Atiyah_extension}
+0 \;\to\; \mathrm{End}\,E \;\to\; Q \;\to\; T_X \;\to\; 0,
+\fe
+with extension class determined by ${\cal F}$. The long exact sequence in cohomology contains
+\ie
+\cdots \to H^1(X,Q)\to H^1(X,T_X)\xrightarrow{\ \alpha\ } H^2(X,\mathrm{End}\,E)\to \cdots,
+\fe
+and the condition $\alpha([Z])=0$ is precisely the condition that the complex-structure class lift to an element of $H^1(X,Q)$. In particular, away from the $(2,2)$ locus one should think of the combined ``complex-structure+bundle'' moduli as a single deformation problem governed by $H^1(X,Q)$ rather than by $H^1(X,T_X)\oplus H^1(X,\mathrm{End}\,E)$.
+
+\subsection{Recognition in the abstract $(0,2)$ CFT language}
+
+The large-volume constraints above have a direct interpretation in the operator language of sections 3.1--3.4.
+\begin{enumerate}
+\item The \emph{existence} of a supersymmetric marginal deformation requires a right-chiral primary of $(\wt h,\wt q)=({1\over 2},1)$, and therefore a nontrivial class in the $\wt G^-_{-{1\over 2}}$ cohomology underlying (\ref{rFterm}). In a geometric NLSM, that cohomology becomes the Dolbeault-type cohomology encoded by (\ref{eq:geom_cond}) \cite{Melnikov:2011aa}.
+\item The current-type multiplets of section 3.1 (vertices of the form (\ref{defcurrent})) correspond at large volume to pure bundle deformations with $Z=0=Y$ and $\Lambda\in H^1(X,\mathrm{End}\,E)$, as described already in section 3.4.
+\item A would-be pure ``complex-structure-type'' deformation with $\Lambda=0$ exists only if the Atiyah class constraint $\alpha([Z])=0$ holds. In CFT terms, the would-be marginal operator fails to be right-chiral unless it is accompanied by the appropriate bundle piece. This is the operator-level manifestation of the mixing between the $Z$ and $\Lambda$ directions in (\ref{eq:geom_cond}).
+\end{enumerate}
+Concretely, at the standard-embedding point $E=T_X$ the $q=0$ descendant moduli of (\ref{defmoduli}) realize the $(Z,Y)$ directions in (\ref{eq:geom_triple}), while the current-type multiplets (\ref{defcurrent}) realize the $\Lambda$ direction. Moving away from the standard embedding by turning on $\Lambda\neq 0$ generically changes which $Z$-type solutions survive the holomorphy constraint, and in the intrinsic CFT language this is precisely the statement that some of the former $(2,2)$ moduli cease to be represented by right-chiral primaries in the deformed $(0,2)$ theory \cite{Anderson:2011ty,Melnikov:2011aa}.
+Thus, from the intrinsic point of view of section 3, the geometric Atiyah constraint should be viewed as a \emph{cohomological existence condition} for the appropriate $(h,\wt h)=(1,{1\over 2})$ chiral primary in the deformed $(0,2)$ theory, rather than as a selection rule on a Yukawa coupling. Once such first-order deformations exist, their further (in)stability is controlled by higher-order obstructions, which we analyze using conformal perturbation theory in section~\ref{sec:cpt_obstructions}.
+
+\subsection{Brief remark on torsion/flux backgrounds and later developments}
+
+On non-K\"ahler targets with $H\neq 0$, the $\bar\partial Y=\iota_Z H$ mixing in (\ref{eq:geom_cond}) implies that the Hermitian moduli $Y$ and complex-structure moduli $Z$ are no longer independent even at first order; in particular some universal directions can be obstructed \cite{Melnikov:2011aa}. This dovetails with the geometric analysis of the Strominger system \cite{Strominger:1986uh} and its torsional moduli spaces \cite{Becker:2006xp}. More recently, a number of works have reformulated the combined $(g,B,E)$ deformation problem (including anomaly-cancellation constraints) in terms of larger extension bundles and their Dolbeault-like cohomologies; see e.g.\ \cite{deLaOssa:2014lma} and references therein.
+
+\section{Conformal perturbation theory and obstructions}\label{sec:cpt_obstructions}
 
 We now phrase the obstruction problem directly in conformal perturbation theory. Let $\Phi_i$ be a basis of marginal operators of the undeformed theory (in the present setting, $\Phi_i$ are the integrated versions of the supersymmetric deformations (\ref{rFterm})). Consider the perturbation
 \ie\label{cptpert}
