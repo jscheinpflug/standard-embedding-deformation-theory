@@ -248,7 +248,7 @@ e^{-{\wt\phi}}\,J^{A'B'}\,\mc{U}_{(\wt h,\wt q)=({1\over 2},1)}(\bz),
 and they generically break the holomorphic ${\cal N}=2$ structure while preserving the anti-holomorphic one.
 \end{enumerate}
 
-The CPT conjugates correspond to $(\wt h,\wt q)=({1\over 2},-1)$ together with exchanging $\wt G^-\leftrightarrow \wt G^+$ in (\ref{rFterm}); for brevity we will focus on the $\wt q=1$ sector.
+The CPT conjugates correspond to $(\wt h,\wt q)=({1\over 2},-1)$ together with exchanging $\wt G^-\leftrightarrow \wt G^+$ in (\ref{rFterm}); we will keep both $\wt q=\pm 1$ sectors explicit when discussing NS--NS--NS correlators, since picture-changing forces one to mix them.
 
 \subsection{Yukawa couplings and cubic obstructions}
 
@@ -330,9 +330,39 @@ For the Yukawa couplings between the BPS deformation multiplets, charge conserva
 
 In contrast, $q=0$ \emph{primary} multiplets (when present) are not protected by this Ward identity, and their Yukawa couplings of type (3) above are generically nonzero unless forbidden by additional symmetries.
 
+\subsubsection*{NS--NS--NS correlators and conformal perturbation theory}
+
+The Yukawa correlators (\ref{yukawa3pt}) test cubic superpotential obstructions. Exact marginality, however, is governed by the OPE of the \emph{integrated} marginal operators that appear in the supersymmetric deformation (\ref{rFterm}), and the corresponding OPE coefficients are extracted from sphere 3-point functions of three NS insertions.
+
+In the BRST description the NS--NS--NS correlator requires one insertion of the PCO, because on the sphere the total right-moving picture number must be $-2$. Choosing the picture assignment $(0,-1,-1)$, we write the chiral and anti-chiral $(-1)$-picture NS vertices as
+\ie
+V_i^{(-1)} = e^{-{\wt\phi}}\,\Lambda_i\,\mc{O}_i^{\rm NS},\qquad
+\overline V_i^{(-1)} = e^{-{\wt\phi}}\,\Lambda_i\,\overline{\mc{O}}{}_i^{\rm NS},
+\fe
+where $\mc{O}_i^{\rm NS}$ has $(\wt h,\wt q)=({1\over 2},1)$ and $\overline{\mc{O}}{}_i^{\rm NS}$ has $(\wt h,\wt q)=({1\over 2},-1)$. The PCO is
+\ie
+X(\bz)\equiv \{Q_{\rm BRST},\wt\xi(\bz)\} \;=\; e^{{\wt\phi}(\bz)}\big(\wt G^+ + \wt G^-\big)(\bz) + \cdots,
+\fe
+so it contains an explicit insertion of the right-moving supercurrent. The 0-picture vertices are obtained by applying $X$:
+\ie\label{V0fromPCO}
+V_i^{(0)} \equiv X\cdot V_i^{(-1)} \;\sim\; \wt G^-_{-{1\over 2}}\big(\Lambda_i\,\mc{O}_i^{\rm NS}\big),\qquad
+\overline V_i^{(0)} \equiv X\cdot \overline V_i^{(-1)} \;\sim\; \wt G^+_{-{1\over 2}}\big(\Lambda_i\,\overline{\mc{O}}{}_i^{\rm NS}\big),
+\fe
+where only the displayed term in $\wt G^\pm$ contributes because $\wt G^+_{-{1\over 2}}\mc{O}_i^{\rm NS}=0$ and $\wt G^-_{-{1\over 2}}\overline{\mc{O}}{}_i^{\rm NS}=0$ by right chirality. The conformal-perturbation-theory coefficients $C^i{}_{jk}$ of section~\ref{sec:cpt_obstructions} are then proportional to NS--NS--NS correlators of the schematic form
+\ie\label{NSNSNS3pt}
+C^i{}_{j\bar k}\;\propto\;\left\langle V_i^{(0)}(\infty)\,V_j^{(-1)}(1)\,\overline V_k^{(-1)}(0)\right\rangle,
+\fe
+together with permutations and the conjugate correlators with $V\leftrightarrow \overline V$. At a standard embedding $(2,2)$ point, conservation of the right-moving $U(1)_R$ current implies that the two $(-1)$-picture insertions must have opposite right charges,
+\ie\label{qtildeSelection}
+\wt q_j + \wt q_k = 0,
+\fe
+so one must be in the $\wt q=1$ sector and the other in the $\wt q=-1$ sector.
+
 \subsection{Possibly non-vanishing 3-point functions}
 
-The selection rules of section 3.2 leave only a small set of Yukawa correlators that are not forced to vanish at a generic standard embedding $(2,2)$ point. Here we list these remaining possibilities in a form convenient for explicit computation. Throughout we use the vertex operator choice (\ref{defverts}) and the schematic definition (\ref{yukawa3pt}); ``possibly non-vanishing'' means not ruled out by the free-fermion contractions (\ref{gaugecontractions}), holomorphic charge conservation (\ref{qsum0}), and the Ward-identity vanishing for the $q=0$ descendant moduli.
+The selection rules of section 3.2 leave only a small set of 3-point functions that are not forced to vanish at a generic standard embedding $(2,2)$ point. We distinguish (i) NS--R--R correlators that compute spacetime Yukawa couplings, and (ii) NS--NS--NS correlators (with one PCO insertion) that compute the OPE coefficients entering conformal perturbation theory. Throughout, ``possibly non-vanishing'' means not ruled out by the free-fermion contractions (\ref{gaugecontractions}) and holomorphic charge conservation (\ref{qsum0}); in addition, the Yukawas are subject to the Ward-identity vanishing for the $q=0$ descendant moduli, while the NS--NS--NS correlators are subject to the right-charge condition (\ref{qtildeSelection}).
+
+\subsubsection*{NS--R--R Yukawas}
 
 \begin{enumerate}
 \item {\bf Chiral-ring Yukawas (two matter and one $q=\mp 2$ multiplet).}\\
@@ -376,7 +406,48 @@ which is model-dependent but not forbidden by the general selection rules.
 A Yukawa with exactly two current-type multiplets would require an internal holomorphic one-point function and therefore vanishes unless the remaining insertion is the identity, which is not the case for a marginal deformation.
 \end{enumerate}
 
-The vanishing (or not) of these cubic couplings provides the first, model-independent obstruction test for deformations leaving the standard embedding locus. Higher-order obstructions are then governed by higher-point functions, which we organize in section~\ref{sec:cpt_obstructions} using conformal perturbation theory.
+\subsubsection*{NS--NS--NS correlators (CPT/OPE coefficients)}
+
+The NS--NS--NS correlators relevant for conformal perturbation theory are of the form (\ref{NSNSNS3pt}), i.e.\ they involve a 0-picture vertex obtained by picture-changing and thus contain an explicit right-moving supercurrent insertion. The remaining possibilities consistent with (\ref{gaugecontractions}), (\ref{qsum0}), and (\ref{qtildeSelection}) may be organized as follows (together with permutations and conjugates):
+\begin{enumerate}
+\item {\bf Two matter and one $F=0$ insertion ($\langle \lambda\,\lambda\rangle\neq 0$).}\\
+The holomorphic charge patterns are the same as for the Yukawas,
+\ie
+(q,q,q)=(+1,+1,-2),\quad (-1,-1,+2),\quad (+1,-1,0),
+\fe
+but now with one of the $(-1)$-picture matter insertions replaced by its right-CPT conjugate to satisfy (\ref{qtildeSelection}). A representative correlator is
+\ie
+\langle \lambda^{A'}\lambda^{B'}\rangle~\left\langle \big(\wt G^-_{-{1\over 2}}\mc{O}_i^{\rm NS}\big)~{\cal O}_j^{\rm NS}~\overline{\cal O}{}_k^{\rm NS} \right\rangle^{(2,2)~{\rm SCFT}},
+\fe
+where ${\cal O}_{j,k}^{\rm NS}$ are matter operators (\ref{defmatter}) and the $F=0$ insertion is taken from (\ref{defq2}), (\ref{defmoduli}), or (\ref{defq0primary}) according to the desired $q$.
+
+\item {\bf Purely internal $F=0$ correlators ($\Lambda=\mathbf{1}$).}\\
+Here the gauge-fermion factor is trivial and holomorphic charge conservation restricts to $(q,q,q)=(0,0,0)$ and $(0,+2,-2)$ (with the $q=0$ sector including both descendants (\ref{defmoduli}) and possible primaries (\ref{defq0primary})). Representative internal correlators are
+\ie
+\left\langle \big(\wt G^-_{-{1\over 2}}{\cal P}^{\rm NS}_{(0,1)}\big)~{\cal P}^{\rm NS}_{(0,1)}~\overline{\cal P}{}^{\rm NS}_{(0,-1)} \right\rangle^{(2,2)~{\rm SCFT}},
+\qquad
+\left\langle \big(\wt G^-_{-{1\over 2}}{\cal O}'^{\rm NS}_{(+2,1)}\big)~{\cal O}'^{\rm NS}_{(-2,1)}~\overline{\cal P}{}^{\rm NS}_{(0,-1)} \right\rangle^{(2,2)~{\rm SCFT}},
+\fe
+together with permutations and the variants where the $(-1)$-picture insertion with $\wt q=-1$ is one of the $q=\pm 2$ operators instead.
+
+\item {\bf One current and two matter ($\langle J\,\lambda\,\lambda\rangle\neq 0$).}\\
+With one current-type multiplet and two matter multiplets, holomorphic charge conservation forces the matter charges to be opposite, $q=\pm 1$. A representative correlator is
+\ie
+\langle J^{A'B'}\,\lambda^{C'}\,\lambda^{D'}\rangle~
+\left\langle \big(\wt G^-_{-{1\over 2}}\mc{U}^{\rm NS}\big)~{\cal O}^{\rm NS}_{(+1,1)}~\overline{\cal O}{}^{\rm NS}_{(-1,-1)} \right\rangle^{(2,2)~{\rm SCFT}},
+\fe
+with the understanding that one of the two matter insertions is chosen from the $\wt q=-1$ sector to satisfy (\ref{qtildeSelection}).
+
+\item {\bf Three currents ($\langle J\,J\,J\rangle\neq 0$).}\\
+With three current-type multiplets, holomorphic charge conservation is automatic (all $q=0$) and the only model-independent constraint beyond gauge contractions is (\ref{qtildeSelection}). A representative correlator is
+\ie
+\langle J\,J\,J\rangle~\left\langle \big(\wt G^-_{-{1\over 2}}\mc{U}_i^{\rm NS}\big)~\mc{U}_j^{\rm NS}~\overline{\mc{U}}{}_k^{\rm NS} \right\rangle^{(2,2)~{\rm SCFT}},
+\fe
+where $\mc{U}^{\rm NS}$ denotes a purely right-moving chiral primary in the left vacuum module (section 3.1), and $\overline{\mc{U}}{}^{\rm NS}$ is its right-CPT conjugate.
+\end{enumerate}
+As for the Yukawas, a correlator with exactly two current-type multiplets would require a nontrivial holomorphic one-point function and therefore vanishes for a marginal deformation.
+
+The vanishing (or not) of the Yukawa correlators above provides the first, model-independent obstruction test for deformations leaving the standard embedding locus. Independently, the NS--NS--NS correlators determine the leading (quadratic) beta functions in conformal perturbation theory; higher-order obstructions are then governed by higher-point functions, which we organize in section~\ref{sec:cpt_obstructions}.
 
 \subsection{Large-volume interpretation}
 
@@ -388,6 +459,7 @@ so that the worldsheet theory has an enhanced $(2,2)$ structure \cite{Sen:1986mg
 \ie\label{GpsiX}
 \wt G^-_{-{1\over 2}}\,\wt\psi^{\bar i} \;\sim\; \bar\partial X^{\bar i} + \cdots.
 \fe
+These free-field representatives underlie both types of three-point functions discussed above: the NS--R--R Yukawas and the NS--NS--NS correlators relevant for conformal perturbation theory (with one PCO insertion). We therefore present the large-volume operator dictionary once and then focus on the extra ingredient for CPT, namely the picture-changing replacement (\ref{GpsiX}).
 The geometric meaning of the deformation classes of section 3.1 follows by inserting explicit free-field representatives of the internal chiral primaries. A useful general rule is that a Dolbeault class in
 \ie
 H^{1}(X,V)\;\equiv\; H^{0,1}_{\bar\partial}(X,V)
@@ -411,17 +483,53 @@ whose descendant in (\ref{defmoduli}) produces the usual supersymmetric deformat
 \ie
 {\cal O}^{{\rm NS},(-1,1)} \;\sim\; \mu_{\bar i}{}^{j}(X)\,\psi_{j}(z)\wt\psi^{\bar i}(\bz),
 \fe
-where $\psi_{j}=g_{j\bar k}\psi^{\bar k}$. Acting with $G^\pm_{-{1\over 2}}$ and $\wt G^-_{-{1\over 2}}$ as in (\ref{defmoduli}) produces the corresponding marginal deformation of the sigma-model action (schematically $\delta S\sim\int \mu_{\bar i}{}^{j}\,\partial X^{j}\bar\partial X^{\bar i}+\cdots$), implementing the complex-structure variation.
-\end{enumerate}
-
-\item {\bf Bundle deformations (current-type multiplets with $\Lambda=J$).}\\
-Deforming away from the standard embedding while preserving $(0,2)$ supersymmetry means deforming the holomorphic structure of the left-moving bundle $E$. Infinitesimally this is described by $\delta A\in\Omega^{0,1}(\mathrm{End}\,E)$ modulo gauge transformations, with linearized holomorphy condition $\bar\partial_E \delta A=0$ and equivalence $\delta A\sim \delta A+\bar\partial_E\epsilon$, hence a class in $H^{1}(X,\mathrm{End}\,E)$. On the worldsheet, such deformations appear precisely as the current-type multiplets of section 3.1, with unintegrated vertices of the form (\ref{defcurrent}): the left-moving factor is a gauge current $J^{A'B'}=: \lambda^{A'}\lambda^{B'}:$, while the right-moving chiral primary in the left vacuum module is represented at large volume by $\mc{U}(\bz)=\delta A_{\bar i}^{A'B'}(X)\,\wt\psi^{\bar i}(\bz)$. Using (\ref{GpsiX}), the integrated perturbation (\ref{rFterm}) then reduces to the familiar NLSM deformation of the gauge connection in the left-moving kinetic term,
-\ie
-\delta S_E \;\sim\; \int d^2z~\delta A_{\bar i}^{A'B'}(X)\,\bar\partial X^{\bar i}\,J^{A'B'}(z) + \cdots.
-\fe
-
-\item {\bf Charged Higgs-branch directions (single-$\lambda$ matter multiplets).}\\
-The deformations with $\Lambda=\lambda^{A'}$ (cf.\ (\ref{defmatter})) correspond to turning on backgrounds for spacetime chiral multiplets that are charged under the unbroken 4D gauge symmetry at the standard embedding point. In the large-volume sigma-model language these are bundle-valued ``matter'' fluctuations. For a general heterotic compactification with bundle $E$, massless charged matter in a representation $R$ is counted by $H^{1}(X,V_R)$, where $V_R$ is the associated bundle (the conditions $\bar\partial_{V_R}\alpha=0$ and $\alpha\sim \alpha+\bar\partial_{V_R}\beta$ are the linearized equations of motion and gauge equivalences). At the level of free fields, a representative $\alpha_{\bar i}(X)\in H^{1}(X,V_R)$ leads to a vertex of the schematic form
+	where $\psi_{j}=g_{j\bar k}\psi^{\bar k}$. Acting with $G^\pm_{-{1\over 2}}$ and $\wt G^-_{-{1\over 2}}$ as in (\ref{defmoduli}) produces the corresponding marginal deformation of the sigma-model action (schematically $\delta S\sim\int \mu_{\bar i}{}^{j}\,\partial X^{j}\bar\partial X^{\bar i}+\cdots$), implementing the complex-structure variation.
+	At leading order the picture-changed 0-picture insertion appearing in the NS--NS--NS correlator (\ref{NSNSNS3pt}) is precisely this $(1,1)$ operator, obtained by replacing $\wt\psi^{\bar i}\to \bar\partial X^{\bar i}$ via (\ref{GpsiX}). The corresponding quadratic CPT obstruction is represented by the Kodaira--Spencer bracket of Beltrami differentials,
+	\ie
+	\relax [\mu_1,\mu_2]_{\bar i\bar j}{}^{k}
+	\;\equiv\;
+	\mu_{1[\bar i}{}^{\ell}\,\partial_{\ell} \mu_{2\bar j]}{}^{k}
+	-
+	\mu_{2[\bar i}{}^{\ell}\,\partial_{\ell} \mu_{1\bar j]}{}^{k}
+	\;\in\;\Omega^{0,2}(X,T_X),
+	\fe
+	whose cohomology class in $H^{2}(X,T_X)$ is the familiar integrability obstruction.
+	\end{enumerate}
+	
+	\item {\bf Bundle deformations (current-type multiplets with $\Lambda=J$).}\\
+	Deforming away from the standard embedding while preserving $(0,2)$ supersymmetry means deforming the holomorphic structure of the left-moving bundle $E$. Infinitesimally this is described by $\delta A\in\Omega^{0,1}(\mathrm{End}\,E)$ modulo gauge transformations, with linearized holomorphy condition $\bar\partial_E \delta A=0$ and equivalence $\delta A\sim \delta A+\bar\partial_E\epsilon$, hence a class in $H^{1}(X,\mathrm{End}\,E)$. On the worldsheet, such deformations appear precisely as the current-type multiplets of section 3.1, with unintegrated vertices of the form (\ref{defcurrent}): the left-moving factor is a gauge current $J^{A'B'}=: \lambda^{A'}\lambda^{B'}:$, while the right-moving chiral primary in the left vacuum module is represented at large volume by $\mc{U}(\bz)=\delta A_{\bar i}^{A'B'}(X)\,\wt\psi^{\bar i}(\bz)$. Using (\ref{GpsiX}), the integrated perturbation (\ref{rFterm}) then reduces to the familiar NLSM deformation of the gauge connection in the left-moving kinetic term,
+	\ie
+	\delta S_E \;\sim\; \int d^2z~\delta A_{\bar i}^{A'B'}(X)\,\bar\partial X^{\bar i}\,J^{A'B'}(z) + \cdots.
+		\fe
+		Equivalently, in the NS--NS--NS correlator (\ref{NSNSNS3pt}) the required 0-picture insertion is obtained by picture-changing the $(-1)$-picture vertex $e^{-{\wt\phi}}J^{A'B'}\delta A_{\bar i}^{A'B'}\wt\psi^{\bar i}$, which again implements $\wt\psi^{\bar i}\to \bar\partial X^{\bar i}$ at leading order. The corresponding quadratic CPT obstructions are encoded in the bundle bracket
+		\ie
+		\relax [\delta A_1,\delta A_2]_{\bar i\bar j}
+	\;\equiv\;
+	[\delta A_{1\bar i},\delta A_{2\bar j}]-
+	[\delta A_{1\bar j},\delta A_{2\bar i}]
+		\;\in\;\Omega^{0,2}(X,\mathrm{End}\,E),
+		\fe
+		which is the large-volume avatar of the structure constant extracted from the NS--NS--NS sphere correlator (\ref{NSNSNS3pt}), e.g.
+		\[
+		\left\langle V_{\delta A_3}^{(0)}(\infty)\,V_{\delta A_1}^{(-1)}(1)\,\overline V_{\delta A_2}^{(-1)}(0)\right\rangle
+		\]
+		for current-type vertices $V_{\delta A}^{(-1)}\sim e^{-{\wt\phi}}J^{A'B'}\delta A_{\bar i}^{A'B'}\,\wt\psi^{\bar i}$ and $V^{(0)}=X\cdot V^{(-1)}$ as in (\ref{V0fromPCO}).
+		and in the mixed curvature contraction with a complex-structure deformation,
+		\ie
+		(\iota_{\mu}{\cal F})_{\bar i\bar j}
+	\;\equiv\;
+	\mu_{[\bar i}{}^{k}\,{\cal F}_{\bar j]k}
+		\;\in\;\Omega^{0,2}(X,\mathrm{End}\,E),
+		\fe
+		likewise obtained by projecting the mixed NS--NS--NS correlator (\ref{NSNSNS3pt}) onto a bundle direction, e.g.
+		\[
+		\left\langle V_{\delta A_3}^{(0)}(\infty)\,V_{\mu}^{(-1)}(1)\,\overline V_{\delta A_2}^{(-1)}(0)\right\rangle
+		\]
+		with $V_{\mu}^{(-1)}\sim e^{-{\wt\phi}}\,\mu_{\bar i}{}^{j}\psi_{j}\,\wt\psi^{\bar i}$ the complex-structure vertex of (\ref{defmoduli}).
+		whose cohomology class is the Atiyah map (\ref{eq:Atiyah_map}) that controls which complex-structure directions survive away from the standard embedding locus.
+		
+		\item {\bf Charged Higgs-branch directions (single-$\lambda$ matter multiplets).}\\
+	The deformations with $\Lambda=\lambda^{A'}$ (cf.\ (\ref{defmatter})) correspond to turning on backgrounds for spacetime chiral multiplets that are charged under the unbroken 4D gauge symmetry at the standard embedding point. In the large-volume sigma-model language these are bundle-valued ``matter'' fluctuations. For a general heterotic compactification with bundle $E$, massless charged matter in a representation $R$ is counted by $H^{1}(X,V_R)$, where $V_R$ is the associated bundle (the conditions $\bar\partial_{V_R}\alpha=0$ and $\alpha\sim \alpha+\bar\partial_{V_R}\beta$ are the linearized equations of motion and gauge equivalences). At the level of free fields, a representative $\alpha_{\bar i}(X)\in H^{1}(X,V_R)$ leads to a vertex of the schematic form
 \ie
 V_{\rm matter}^{\rm NS}\;\sim\; e^{-{\wt\phi}}\,\lambda\,\alpha_{\bar i}(X)\,\psi(z)\,\wt\psi^{\bar i}(\bz),
 \fe
@@ -454,74 +562,109 @@ with $\rho_{\bar i\,jk}\in H^{1}(X,\wedge^2 T_X^\vee)$ and $\rho_{\bar i}{}^{jk}
 These are the long-multiplet directions of the form (\ref{defq0primary}). In a geometric sigma model they arise only when there are additional holomorphic weight-one primaries of zero $U(1)_R$ charge (beyond those in the ${\cal N}=2$ algebra). At free-field points (e.g.\ toroidal orbifolds) one can take such a primary to be a holomorphic current $j_a(z)$ (for instance $j_a=i\partial Y^a$ on a torus), and then ${\cal P}^{\rm NS}_{(0,1)}\sim j_a(z)\,\wt\psi^{\bar i}(\bz)$ describes a current--current marginal deformation, including Wilson-line moduli.
 \end{enumerate}
 
-\section{Geometric constraints away from the $(2,2)$ locus at large volume}\label{sec:geom_constraints}
+\section{Large-volume constraints near the standard embedding}\label{sec:geom_constraints}
 
-Section 3 classified the supersymmetric marginal deformations that exist at a standard-embedding $(2,2)$ point, using only the intrinsic operator algebra of a generic $(2,2)$ SCFT. When the worldsheet theory admits a weakly coupled large-volume description as a $(0,2)$ nonlinear sigma model (NLSM), there is an independent and very concrete description of \emph{gauge-neutral} first-order deformations in terms of differential-geometric data and cohomology. A particularly clear tree-level worldsheet derivation is due to Melnikov and Sharpe \cite{Melnikov:2011aa}. In this section we summarize their constraints and explain how they appear from the abstract $(0,2)$ CFT point of view.
+In this section we assume the standard-embedding point admits a weakly coupled large-volume description as a heterotic NLSM on a smooth Calabi--Yau threefold $X$ with vanishing tree-level flux and gauge bundle
+\ie
+E \;=\; T_X,
+\fe
+so that the worldsheet theory has the accidental holomorphic ${\cal N}=2$ symmetry of a $(2,2)$ model. We then ask what happens to the familiar $(2,2)$ moduli when we turn on a \emph{small} supersymmetric $(0,2)$ deformation away from $E=T_X$: which directions are obstructed already at first order in the large-volume expansion, what geometric conditions must hold, and how can those conditions be recognized in the abstract CFT language of section 3.
 
-\subsection{Marginal deformations are $(0,2)$ F-terms}
+\subsection{Standard embedding at large volume: the $(Z,Y,\Lambda)$ description}
 
-In a unitary $(0,2)$ SCFT, a marginal supersymmetric deformation must be an F-term built from a right-moving chiral primary operator $\mc{X}$ with quantum numbers $(h,\wt h)=(1,{1\over 2})$ and right-moving R-charge $\wt q=+1$ \cite{Melnikov:2011aa}. In the operator language used above, this is precisely the structure of (\ref{rFterm}): the integrated deformation is obtained by acting with $\wt G^-_{-{1\over 2}}$ on a right-chiral primary of $(\wt h,\wt q)=({1\over 2},1)$.
-
-\subsection{Tree-level NLSM constraints and equivalences}
-
-Consider the tree-level $(0,2)$ NLSM with target a complex manifold $X$ and a holomorphic vector bundle $E\to X$ (encoding the left-moving gauge degrees of freedom), in the presence of NS flux $H$ \cite{Melnikov:2011aa}. In the large-volume limit, a chiral primary $\mc{X}$ of the appropriate weights and charges has a classical representative determined by a triple
+At tree level in $\alpha'$, a convenient worldsheet description of gauge-neutral first-order deformations of a heterotic NLSM is given by Melnikov and Sharpe \cite{Melnikov:2011aa}. On a Calabi--Yau target with $H=0$, the relevant right-chiral operator is represented classically by a triple
 \ie\label{eq:geom_triple}
 (Z,Y,\Lambda)\in \Omega^{0,1}(X,T_X)\oplus \Omega^{1,1}(X)\oplus \Omega^{0,1}(X,\mathrm{End}\,E),
 \fe
-modulo local equivalences coming from gauge transformations and field redefinitions. Requiring chirality of the corresponding operator up to the NLSM equations of motion gives the coupled constraints \cite{Melnikov:2011aa}
+defined modulo equivalences, and chirality (up to equations of motion) imposes coupled conditions that reduce at the standard embedding point $E=T_X$ to \cite{Melnikov:2011aa}
 \ie\label{eq:geom_cond}
 \bar\partial Z \;=\; 0,\qquad
-\bar\partial Y \;=\; \iota_Z H,\qquad
-\bar\partial_E \Lambda \;=\; \iota_Z {\cal F}.
+\bar\partial Y \;=\; 0,\qquad
+\bar\partial \Lambda \;=\; \iota_Z R,
 \fe
-where ${\cal F}$ is the $(1,1)$ curvature of the holomorphic connection on $E$, $\bar\partial_E$ is the corresponding Dolbeault operator, and $\iota_Z$ denotes contraction of the $(0,1)$-form $Z$ into the first index of $H$ or ${\cal F}$. Distinct triples related by local field redefinitions and gauge transformations correspond to the same deformation; explicitly, the equivalences generalize the familiar shifts by $\bar\partial$-exact forms and bundle gauge transformations, and are given in \cite{Melnikov:2011aa}.
-
-Two qualitative features of (\ref{eq:geom_cond}) are important for understanding deformations away from the $(2,2)$ locus:
-\begin{enumerate}
-\item The Hermitian deformations $Y$ and complex-structure deformations $Z$ \emph{mix} in the presence of $H$ through the $\bar\partial Y=\iota_Z H$ relation in (\ref{eq:geom_cond}). Even at first order, the ``K\"ahler moduli'' are not independent of complex-structure data once the target is non-K\"ahler.
-\item The bundle deformation $\Lambda$ and complex-structure deformation $Z$ are linked by the $\bar\partial_E\Lambda=\iota_Z{\cal F}$ relation in (\ref{eq:geom_cond}). In particular, a complex-structure deformation is allowed only if the bundle can be deformed simultaneously so that it remains holomorphic.
-\end{enumerate}
-
-\subsection{Calabi--Yau compactifications and the Atiyah constraint}
-
-Now specialize to the large-volume regime of a Calabi--Yau target with $H=0$ and a stable holomorphic bundle $E\to X$. Then (\ref{eq:geom_cond}) reduces to
+where $R$ is the $(1,1)$ curvature of the K\"ahler connection on $T_X$. On the $(2,2)$ locus there is a further simplification: defining
+\ie\label{eq:Lambda_tilde}
+\widetilde\Lambda \;\equiv\; \Lambda - \nabla Z,
+\fe
+one finds $\bar\partial\,\widetilde\Lambda=0$ (and $\widetilde\Lambda\sim \widetilde\Lambda+\bar\partial\,\widetilde\lambda$), so the first-order deformations split canonically as
 \ie
-\bar\partial Z=0,\qquad \bar\partial Y=0,\qquad \bar\partial_E\Lambda=\iota_Z {\cal F},
+\relax [Z]\in H^1(X,T_X),\qquad [Y]\in H^1(X,T_X^\vee),\qquad [\widetilde\Lambda]\in H^1(X,\mathrm{End}\,T_X).
 \fe
-again modulo the equivalences of \cite{Melnikov:2011aa}. The first two conditions imply that $Z$ and $Y$ define Dolbeault cohomology classes
+In the operator classification of section 3.1, the $(Z,Y)$ directions correspond to the $q=0$ descendant moduli (\ref{defmoduli}), while the $\widetilde\Lambda$ directions correspond to the current-type multiplets (\ref{defcurrent}) and are precisely the gauge-neutral deformations that leave the standard embedding locus already at first order.
+
+\subsection{Infinitesimal departure: the linearized holomorphy/Atiyah constraint}
+
+Now turn on a small $(0,2)$ deformation away from the standard embedding by deforming the gauge bundle to a nearby holomorphic bundle $E_\varepsilon$ (as a smooth bundle, still isomorphic to $T_X$) with curvature ${\cal F}_\varepsilon$ and ${\cal F}_0=R$. The Melnikov--Sharpe chirality condition for a combined complex-structure deformation $[Z]\in H^1(X,T_X)$ and bundle deformation $\Lambda$ takes the familiar form \cite{Melnikov:2011aa}
 \ie
-\relax [Z]\in H^1(X,T_X),\qquad [Y]\in H^1(X,T_X^\vee).
+\bar\partial_{E_\varepsilon}\Lambda \;=\; \iota_Z{\cal F}_\varepsilon.
 \fe
-However, the third equation is qualitatively different: because ${\cal F}$ is a $(1,1)$-form with values in $\mathrm{End}\,E$, the contraction $\iota_Z{\cal F}$ is a $(0,2)$-form valued in $\mathrm{End}\,E$, and therefore defines a cohomology class
+For a fixed holomorphic bundle $E_\varepsilon$, this equation admits a solution $\Lambda$ if and only if the cohomology class
 \ie\label{eq:Atiyah_map}
-\alpha([Z])\;\equiv\;[\iota_Z{\cal F}]\;\in\; H^2(X,\mathrm{End}\,E).
+\alpha_{E_\varepsilon}([Z]) \;\equiv\; [\iota_Z{\cal F}_\varepsilon]\;\in\; H^2(X,\mathrm{End}\,E_\varepsilon)
 \fe
-A solution $\Lambda$ to $\bar\partial_E\Lambda=\iota_Z {\cal F}$ exists if and only if $\alpha([Z])=0$. This is the Atiyah/holomorphy constraint: only those complex-structure deformations that annihilate the Atiyah class of $E$ survive as genuine first-order deformations of the heterotic vacuum \cite{Atiyah:1957xx,Anderson:2011ty}.
-
-Equivalently, the coupled $(Z,\Lambda)$ data are naturally packaged by the extension bundle $Q$ defined by the short exact sequence \cite{Atiyah:1957xx,Anderson:2011ty,Melnikov:2011aa}
+vanishes. This is the Atiyah/holomorphy constraint \cite{Atiyah:1957xx,Anderson:2011ty}: complex-structure deformations survive only in the kernel of $\alpha_{E_\varepsilon}$. At the standard embedding point $\alpha_{E_0}=0$ for all $[Z]$ (equivalently, $\iota_Z R$ is $\bar\partial$-exact, as encoded by (\ref{eq:Lambda_tilde})), but for a generic nearby bundle deformation $\alpha_{E_\varepsilon}$ becomes nontrivial. Expanding ${\cal F}_\varepsilon=R+\varepsilon\,\delta{\cal F}+O(\varepsilon^2)$, the first obstruction to moving simultaneously in complex structure is therefore the \emph{linearized} constraint
+\ie\label{eq:Atiyah_lin}
+[\iota_Z\,\delta{\cal F}] \;=\; 0 \qquad \text{in } H^2(X,\mathrm{End}\,T_X),
+\fe
+which depends on the chosen direction away from $E=T_X$. Equivalently, the simultaneous first-order deformations of $(X,E_\varepsilon)$ are packaged by the extension bundle $Q_\varepsilon$ defined by \cite{Atiyah:1957xx,Anderson:2011ty}
 \ie\label{eq:Atiyah_extension}
-0 \;\to\; \mathrm{End}\,E \;\to\; Q \;\to\; T_X \;\to\; 0,
+0 \;\to\; \mathrm{End}\,E_\varepsilon \;\to\; Q_\varepsilon \;\to\; T_X \;\to\; 0,
 \fe
-with extension class determined by ${\cal F}$. The long exact sequence in cohomology contains
+and the long exact sequence implies that the image of $H^1(X,Q_\varepsilon)$ in $H^1(X,T_X)$ is precisely $\ker(\alpha_{E_\varepsilon})$.
+
+\subsection{Interpreting the deformation classes of section 3.1}
+
+Sections 4.1--4.2 describe which infinitesimal deformations exist as right-chiral operators in the large-volume NLSM and how their \emph{linear} compatibility conditions are encoded by the Atiyah map. For exact marginality, one must additionally require that turning on such deformations does not generate a beta function. At leading order this is controlled by the NS--NS--NS correlators with a PCO insertion discussed in sections 3.2--3.3; at large volume these correlators reduce to the deformation-theory brackets summarized at the end of section 3.4. We now reinterpret the operator classes of section 3.1 in this geometric language, emphasizing which NS--NS--NS correlators detect their first obstructions.
+
+\subsubsection*{Gauge-neutral directions: $(Z,Y,\widetilde\Lambda)$}
+
+At the standard embedding point, gauge-neutral supersymmetric marginal operators split as
 \ie
-\cdots \to H^1(X,Q)\to H^1(X,T_X)\xrightarrow{\ \alpha\ } H^2(X,\mathrm{End}\,E)\to \cdots,
+\relax [Z]\in H^1(X,T_X),\qquad [Y]\in H^1(X,T_X^\vee),\qquad [\widetilde\Lambda]\in H^1(X,\mathrm{End}\,T_X),
 \fe
-and the condition $\alpha([Z])=0$ is precisely the condition that the complex-structure class lift to an element of $H^1(X,Q)$. In particular, away from the $(2,2)$ locus one should think of the combined ``complex-structure+bundle'' moduli as a single deformation problem governed by $H^1(X,Q)$ rather than by $H^1(X,T_X)\oplus H^1(X,\mathrm{End}\,E)$.
-
-\subsection{Recognition in the abstract $(0,2)$ CFT language}
-
-The large-volume constraints above have a direct interpretation in the operator language of sections 3.1--3.4.
+with $Z,Y$ corresponding to the $q=0$ descendant moduli (\ref{defmoduli}) and $\widetilde\Lambda$ corresponding to the current-type multiplets (\ref{defcurrent}). The linear Melnikov--Sharpe conditions (\ref{eq:geom_cond}) ensure that these deformations exist at first order. The leading CPT constraints come from the quadratic brackets:
 \begin{enumerate}
-\item The \emph{existence} of a supersymmetric marginal deformation requires a right-chiral primary of $(\wt h,\wt q)=({1\over 2},1)$, and therefore a nontrivial class in the $\wt G^-_{-{1\over 2}}$ cohomology underlying (\ref{rFterm}). In a geometric NLSM, that cohomology becomes the Dolbeault-type cohomology encoded by (\ref{eq:geom_cond}) \cite{Melnikov:2011aa}.
-\item The current-type multiplets of section 3.1 (vertices of the form (\ref{defcurrent})) correspond at large volume to pure bundle deformations with $Z=0=Y$ and $\Lambda\in H^1(X,\mathrm{End}\,E)$, as described already in section 3.4.
-\item A would-be pure ``complex-structure-type'' deformation with $\Lambda=0$ exists only if the Atiyah class constraint $\alpha([Z])=0$ holds. In CFT terms, the would-be marginal operator fails to be right-chiral unless it is accompanied by the appropriate bundle piece. This is the operator-level manifestation of the mixing between the $Z$ and $\Lambda$ directions in (\ref{eq:geom_cond}).
+\item {\bf Complex structure ($Z$): integrability.}\\
+For a complex-structure deformation to extend beyond first order one must impose integrability, schematically
+\ie
+\bar\partial Z \;+\; \frac12\,[Z,Z] \;=\; 0,
+\fe
+where $[Z,Z]\in\Omega^{0,2}(X,T_X)$ is the Kodaira--Spencer bracket of section 3.4. The corresponding obstruction class lies in $H^2(X,T_X)$, and its projection onto marginal directions is captured by an NS--NS--NS correlator of the form (\ref{NSNSNS3pt}) built from the $Z$ vertices. For a smooth Calabi--Yau threefold, the standard Tian--Todorov argument implies that this obstruction vanishes, in accord with the existence of the $(2,2)$ conformal manifold.
+
+\item {\bf Bundle deformations away from the standard embedding ($\widetilde\Lambda$): holomorphy and self-obstructions.}\\
+Turning on $\widetilde\Lambda$ deforms the holomorphic structure on $E\simeq T_X$; in components this is the deformation of the $(0,1)$ connection $A^{0,1}\to A^{0,1}+\widetilde\Lambda$. The condition that the deformed bundle remain holomorphic is the Maurer--Cartan equation
+\ie\label{eq:MC_bundle}
+\bar\partial\,\widetilde\Lambda \;+\; \frac12\,[\widetilde\Lambda,\widetilde\Lambda] \;=\; 0,
+\fe
+where $[\widetilde\Lambda,\widetilde\Lambda]\in\Omega^{0,2}(X,\mathrm{End}\,T_X)$ is the bundle bracket of section 3.4. The corresponding obstruction class lies in $H^2(X,\mathrm{End}\,T_X)$; when nontrivial it obstructs continuing the $\widetilde\Lambda$ deformation beyond first order. In the worldsheet language this is precisely what is measured by the NS--NS--NS correlators involving three current-type multiplets in section 3.3: those correlators compute the OPE coefficients that enter the quadratic beta function for the $\widetilde\Lambda$ couplings.
+
+\item {\bf Mixed $(Z,\widetilde\Lambda)$ constraints: the Atiyah map.}\\
+In a background where the bundle is deformed to $E_\varepsilon$ (equivalently $\langle\widetilde\Lambda\rangle\neq 0$), the would-be complex-structure modulus $Z$ must also remain compatible with bundle holomorphy, i.e.\ satisfy $\alpha_{E_\varepsilon}([Z])=0$ as in (\ref{eq:Atiyah_map}). Linearizing around the standard embedding gives the bilinear constraint (\ref{eq:Atiyah_lin}), which is a class in $H^2(X,\mathrm{End}\,T_X)$. In conformal perturbation theory this constraint is encoded in the mixed OPE coefficient, equivalently by the sphere NS--NS--NS correlator of integrated marginal operators (with one PCO insertion, cf.\ sections 3.2--3.3)
+\ie\label{eq:Atiyah_CPT_3pt}
+C^{a}{}_{Ib}\;\propto\;\left\langle \Phi^{a}(\infty)\,\Phi^{I}(1)\,\Phi^{b}(0)\right\rangle,
+\qquad
+\Phi^{i}\equiv \wt G^-_{-{1\over 2}}{\cal W}_i,
+\fe
+which packages the CFT avatar of the Atiyah/holomorphy constraint. The statement $\alpha_{E_0}=0$ at the strict standard embedding point means simply that there is no obstruction when the bundle is \emph{not} deformed. Once we turn on a small background bundle deformation with couplings $\varepsilon^{b}$ along the current-type directions $\Phi^{b}$, the leading induced lifting of complex-structure directions is linear in $\varepsilon$ and is governed by the mixed NS--NS--NS coefficient above:
+\[
+(\alpha_{E_\varepsilon}([Z_I]))^{a}\;\propto\;\varepsilon^{b}\,C^{a}{}_{Ib}\,,
+\]
+equivalently by the requirement that the corresponding CPT bracket vanish in $H^{2}(X,\mathrm{End}\,T_X)$ as in (\ref{eq:Atiyah_lin}). Subleading (cubic and higher) corrections to this leading constraint are controlled by integrated four-point functions, see section \ref{sec:4pt_selection} (and (\ref{eq:Atiyah_4pt_LV}) for a representative large-volume form).
 \end{enumerate}
-Concretely, at the standard-embedding point $E=T_X$ the $q=0$ descendant moduli of (\ref{defmoduli}) realize the $(Z,Y)$ directions in (\ref{eq:geom_triple}), while the current-type multiplets (\ref{defcurrent}) realize the $\Lambda$ direction. Moving away from the standard embedding by turning on $\Lambda\neq 0$ generically changes which $Z$-type solutions survive the holomorphy constraint, and in the intrinsic CFT language this is precisely the statement that some of the former $(2,2)$ moduli cease to be represented by right-chiral primaries in the deformed $(0,2)$ theory \cite{Anderson:2011ty,Melnikov:2011aa}.
-Thus, from the intrinsic point of view of section 3, the geometric Atiyah constraint should be viewed as a \emph{cohomological existence condition} for the appropriate $(h,\wt h)=(1,{1\over 2})$ chiral primary in the deformed $(0,2)$ theory, rather than as a selection rule on a Yukawa coupling. Once such first-order deformations exist, their further (in)stability is controlled by higher-order obstructions, which we analyze using conformal perturbation theory in section~\ref{sec:cpt_obstructions}.
 
-\subsection{Brief remark on torsion/flux backgrounds and later developments}
+The $Y$ directions (K\"ahler and $B$-field moduli) also enter the full $(0,2)$ deformation problem, but for the tree-level $H=0$ backgrounds we consider here they decouple from the holomorphy/Atiyah constraint at linear order; incorporating the $\alpha'$-corrected anomaly/Bianchi constraints would re-couple $Y$ to $(Z,\widetilde\Lambda)$ and is beyond our present scope.
 
-On non-K\"ahler targets with $H\neq 0$, the $\bar\partial Y=\iota_Z H$ mixing in (\ref{eq:geom_cond}) implies that the Hermitian moduli $Y$ and complex-structure moduli $Z$ are no longer independent even at first order; in particular some universal directions can be obstructed \cite{Melnikov:2011aa}. This dovetails with the geometric analysis of the Strominger system \cite{Strominger:1986uh} and its torsional moduli spaces \cite{Becker:2006xp}. More recently, a number of works have reformulated the combined $(g,B,E)$ deformation problem (including anomaly-cancellation constraints) in terms of larger extension bundles and their Dolbeault-like cohomologies; see e.g.\ \cite{deLaOssa:2014lma} and references therein.
+\subsubsection*{Charged and model-dependent directions}
+
+The remaining deformation classes of section 3.1 are not part of the gauge-neutral $(Z,Y,\widetilde\Lambda)$ system, but their leading obstructions are governed by the same NS--NS--NS/CPT logic.
+\begin{enumerate}
+\item {\bf Matter/Higgs directions ($\Lambda=\lambda$).}\\
+Giving a vev to a charged matter multiplet deforms the bundle by turning on off-diagonal components of the connection, often described by extension data. The resulting compatibility constraints on complex structure can be understood as Atiyah-type conditions for the corresponding deformed bundle, and the relevant CPT data are again NS--NS--NS correlators with one insertion of a complex-structure operator and two insertions in the Higgs/background direction. A key effect emphasized in \cite{Anderson:2010mh,Anderson:2011ty} is that such extension classes can exist only on special loci in complex-structure moduli space (``jumping'' cohomology).
+\item {\bf Spectral-flow BPS multiplets ($q=\pm 2$, $\Lambda=\mathbf{1}$).}\\
+At large volume these are represented by operators valued in $H^1(X,\wedge^2 T_X)$ and $H^1(X,\wedge^2 T_X^\vee)$ (section 3.4). Their quadratic obstructions are governed by the corresponding brackets/cup products into $H^2(X,\wedge^2 T_X)$ or $H^2(X,\wedge^2 T_X^\vee)$, and the associated OPE coefficients are extracted from the NS--NS--NS correlators listed in section 3.3.
+\item {\bf Additional $q=0$ primaries (long multiplets).}\\
+These require extra holomorphic weight-one operators beyond the ${\cal N}=2$ algebra and are absent at a generic smooth Calabi--Yau large-volume point, but can arise at special free-field/orbifold points. When present, their exact marginality is tested in the same way: by the vanishing of the corresponding CPT OPE coefficients computed by NS--NS--NS correlators with a PCO insertion.
+\end{enumerate}
 
 \section{Conformal perturbation theory and obstructions}\label{sec:cpt_obstructions}
 
@@ -544,13 +687,117 @@ Exact marginality requires that all beta functions vanish order-by-order; a firs
 At the standard embedding point the internal theory has a holomorphic ${\cal N}=2$ SCA, so holomorphic $U(1)_R$ charge and Ward identities impose strong constraints on the OPEs of the candidate deformations classified in section 3.1. In particular:
 \begin{itemize}
 \item For the $(2,2)$-preserving moduli (the $q=0$ descendants), the perturbing operators sit in short multiplets built on chiral primaries. Their OPEs are constrained by the chiral ring, and the corresponding directions are expected to be exactly marginal, giving the usual conformal manifold of the $(2,2)$ theory.
-\item For deformations that leave the standard embedding locus (those involving $\lambda^{A'}$, the gauge currents $J^{A'B'}$, or carrying $q=\pm 2$), the holomorphic ${\cal N}=2$ symmetry is broken. In conformal perturbation theory this means that the cancellations implied by ${\cal N}=2$ Ward identities need not persist, and one generically expects nonzero coefficients $C^i{}_{jk}$ in (\ref{beta2}) unless forbidden by remaining global symmetries or charge selection rules.
-\end{itemize}
-In practice, one can proceed by starting with a candidate linear combination of deformations from section 3.1, using charge conservation to determine which OPE channels are allowed, and then computing (or constraining) the corresponding three- and four-point functions that control the first nontrivial terms in the beta functions. The vanishing of the cubic superpotential couplings computed in section 2 is a necessary condition for F-flatness, but exact marginality requires the absence of logarithmic divergences to all orders in conformal perturbation theory.
+	\item For deformations that leave the standard embedding locus (those involving $\lambda^{A'}$, the gauge currents $J^{A'B'}$, or carrying $q=\pm 2$), the holomorphic ${\cal N}=2$ symmetry is broken. In conformal perturbation theory this means that the cancellations implied by ${\cal N}=2$ Ward identities need not persist, and one generically expects nonzero coefficients $C^i{}_{jk}$ in (\ref{beta2}) unless forbidden by remaining global symmetries or charge selection rules.
+	\end{itemize}
+	In practice, one can proceed by starting with a candidate linear combination of deformations from section 3.1, using charge conservation to determine which OPE channels are allowed, and then computing (or constraining) the corresponding three- and four-point functions that control the first nontrivial terms in the beta functions. The vanishing of the cubic superpotential couplings computed in section 2 is a necessary condition for F-flatness, but exact marginality requires the absence of logarithmic divergences to all orders in conformal perturbation theory.
 
-
-\bibliographystyle{JHEP}
-\bibliography{stringrefs}
+	\subsection{Four-point functions and subleading selection rules}\label{sec:4pt_selection}
+	
+	At leading order, the coefficients $C^i{}_{jk}$ in (\ref{beta2}) are extracted from NS--NS--NS correlators with one PCO insertion, cf.\ (\ref{NSNSNS3pt}). At the next order in conformal perturbation theory, potential logarithmic divergences are governed by integrated four-point functions of the marginal operators $\Phi_i$. Since the perturbation (\ref{cptpert}) involves only the integrated NS operators $\Phi_i$, the relevant worldsheet data are sphere NS--NS--NS--NS correlators with two PCO insertions; correlators with Ramond insertions compute spacetime couplings but do not enter the beta functions for (\ref{cptpert}).
+	
+	On the sphere the total right-moving picture number must be $-2$, so a four-point function requires two PCO insertions. Choosing the picture assignment $(0,0,-1,-1)$, a representative correlator is
+	\ie\label{NSNSNSNS4pt}
+	\mc{I}_{ij k\bar\ell}\;\propto\;\int d^2z~\left\langle V_i^{(0)}(\infty)\,V_j^{(0)}(1)\,V_k^{(-1)}(z)\,\overline V_\ell^{(-1)}(0)\right\rangle,
+	\fe
+	together with permutations and the conjugate correlators with $V\leftrightarrow \overline V$, and variants where one or both 0-picture vertices are $\overline V^{(0)}$. Here $V^{(0)}$ and $\overline V^{(0)}$ are obtained by picture-changing as in (\ref{V0fromPCO}), so (\ref{NSNSNSNS4pt}) contains two explicit insertions of the right-moving supercurrent.
+	
+	The same three selection rules as in section 3.2 extend immediately to four points:
+	\begin{enumerate}
+	\item {\bf Right-moving $U(1)_R$ (picture/PCO).}\\
+	Since the 0-picture vertices have $\wt q=0$, right-charge conservation implies that the two $(-1)$-picture vertices must have opposite right charges. In particular, in (\ref{NSNSNSNS4pt}) one must choose one $(-1)$-picture insertion from the $\wt q=+1$ sector and one from the $\wt q=-1$ sector (cf.\ (\ref{qtildeSelection})).
+	
+	\item {\bf Gauge-fermion Wick contractions.}\\
+	The free $\lambda^{A'}$ system again factorizes, and Wick's theorem restricts the possible gauge structures. Up to trivial identity insertions, the only potentially nonzero correlators built from $\Lambda\in\{\mathbf{1},\lambda^{A'},J^{A'B'}\}$ are of the schematic types
+	\ie\label{gaugecontractions4pt}
+	&\langle \lambda\,\lambda\rangle\neq 0,\qquad
+	\langle \lambda\,\lambda\,\lambda\,\lambda\rangle\neq 0,\qquad
+	\langle J\,\lambda\,\lambda\rangle\neq 0,\qquad
+	\langle J\,J\rangle\neq 0,
+	\\
+	&\langle J\,J\,\lambda\,\lambda\rangle\neq 0,\qquad
+	\langle J\,J\,J\rangle\neq 0,\qquad
+	\langle J\,J\,J\,J\rangle\neq 0.
+	\fe
+	In particular, a single $J$ insertion with no external $\lambda$'s vanishes, while any correlator with an odd number of single-$\lambda$ insertions vanishes.
+	
+	\item {\bf Holomorphic $U(1)_R$ charge.}\\
+	Conservation of the holomorphic $U(1)_R$ current implies
+	\ie\label{qsum0_4pt}
+	q_1+q_2+q_3+q_4=0,
+	\fe
+	with $q\in\{0,\pm 1,\pm 2\}$ for the multiplets of section 3.1. Since the $q=\pm 1$ multiplets are precisely the single-$\lambda$ matter directions, the gauge selection rule forces the number of $\pm 1$ insertions to be even. Up to permutation, the only allowed holomorphic charge patterns are therefore
+	\ie
+	&(q,q,q,q)=(+1,+1,-1,-1),
+	\\
+	&(q,q,q,q)=(+1,-1,0,0),\quad (+1,-1,+2,-2),\quad (+1,+1,-2,0),\quad (-1,-1,+2,0),
+	\\
+	&(q,q,q,q)=(0,0,0,0),\quad (0,0,+2,-2),\quad (+2,+2,-2,-2).
+	\fe
+	\end{enumerate}
+	
+	Combining these rules, the NS--NS--NS--NS correlators among the deformation multiplets that are not forced to vanish at a generic standard-embedding $(2,2)$ point are:
+	\begin{enumerate}
+	\item {\bf Purely internal ($\Lambda=\mathbf{1}$ for all four).}\\
+	The gauge factor is trivial. Holomorphic charge conservation allows
+	\[
+	(0,0,0,0),\qquad (0,0,+2,-2),\qquad (+2,+2,-2,-2),
+	\]
+	with the $q=0$ sector including both descendants (\ref{defmoduli}) and possible primaries (\ref{defq0primary}).
+	
+	\item {\bf Two matter and two $F=0$ insertions ($\langle\lambda\,\lambda\rangle\neq 0$).}\\
+	With two single-$\lambda$ multiplets, (\ref{qsum0_4pt}) allows the holomorphic patterns $(+1,-1,0,0)$,\allowbreak $(+1,-1,+2,-2)$,\allowbreak $(+1,+1,-2,0)$,\allowbreak and $(-1,-1,+2,0)$.
+	
+	\item {\bf Four matter insertions ($\langle\lambda\,\lambda\,\lambda\,\lambda\rangle\neq 0$).}\\
+	Holomorphic charge conservation forces two $q=+1$ and two $q=-1$ matter multiplets, i.e.\ $(+1,+1,-1,-1)$.
+	
+	\item {\bf One current, two matter, one $F=0$ insertion ($\langle J\,\lambda\,\lambda\rangle\neq 0$).}\\
+	The current carries $q=0$, so (\ref{qsum0_4pt}) permits
+	\[
+	(+1,-1,0,0),\qquad (+1,+1,-2,0),\qquad (-1,-1,+2,0).
+	\]
+	
+	\item {\bf Two currents and two matter ($\langle J\,J\,\lambda\,\lambda\rangle\neq 0$).}\\
+	Holomorphic charge conservation forces the two matter multiplets to have opposite charge, giving $(+1,-1,0,0)$.
+	
+	\item {\bf Two currents and two $F=0$ insertions ($\langle J\,J\rangle\neq 0$).}\\
+	The $F=0$ charges must sum to zero, allowing $(0,0,0,0)$ and $(0,0,+2,-2)$.
+	
+	\item {\bf Three currents and one $q=0$ $F=0$ insertion ($\langle J\,J\,J\rangle\neq 0$).}\\
+	All holomorphic charges are zero, so the remaining insertion must lie in the $q=0$ sector.
+	
+	\item {\bf Four currents ($\langle J\,J\,J\,J\rangle\neq 0$).}\\
+	Holomorphic charge conservation is automatic (all $q=0$); the only model-independent constraint is the right-moving picture/charge condition above.
+	\end{enumerate}
+	In every case one must also satisfy the right-moving selection rule: in a fixed $(0,0,-1,-1)$ picture assignment, one of the two $(-1)$-picture insertions is chosen from the $\wt q=-1$ sector and the other from the $\wt q=+1$ sector, as in (\ref{qtildeSelection}).
+	
+	\subsubsection*{Large-volume interpretation of some non-vanishing cases}
+	
+	At large volume, the vertices of section 3.4 have free-field representatives built from target-space tensors contracted with the right-moving fermions $\wt\psi^{\bar i}$. In an NS--NS--NS--NS correlator, the two PCO insertions produce two 0-picture vertices via (\ref{V0fromPCO}); at leading order this implements the replacement $\wt\psi^{\bar i}\to \bar\partial X^{\bar i}$ as in (\ref{GpsiX}). As a result, the 4-point data that enter CPT can often be read geometrically as higher-order terms in the deformation-theory maps for complex structure and bundles (Kuranishi/Atiyah-type constraints), even when the leading 3-point coefficient vanishes at the strict $(2,2)$ point.
+	
+A particularly important example is the lifting of complex-structure directions by the Atiyah constraint. To leading order away from the standard embedding, turning on a small current-type background deformation $\varepsilon^{b}$ induces the Atiyah map linearly, with components proportional to $\varepsilon^{b}C^{a}{}_{Ib}$ as in (\ref{eq:Atiyah_CPT_3pt}). At subleading order in CPT (cubic and higher in the couplings), the effective mixed coefficient receives corrections governed by integrated four-point functions. For instance, the correction to $C^{a}{}_{Ib}$ linear in an additional current-type background deformation direction $\delta A_\varepsilon\in H^{1}(X,\mathrm{End}\,T_X)$ is schematically extracted from a correlator in the ``three currents + one $q=0$'' family,
+\ie\label{eq:Atiyah_4pt_LV}
+\delta_\varepsilon C^{a}{}_{Ib}
+\;\propto\;
+\int d^2z~\left\langle
+	V_{\delta A_a}^{(0)}(\infty)\,
+	V_{\delta A_\varepsilon}^{(0)}(1)\,
+	V_{\mu_I}^{(-1)}(z)\,
+	\overline V_{\delta A_b}^{(-1)}(0)
+	\right\rangle,
+	\fe
+	where $V_{\delta A}^{(-1)}\sim e^{-{\wt\phi}}\,J^{A'B'}\,\delta A_{\bar i}^{A'B'}(X)\,\wt\psi^{\bar i}$ and $V_{\mu}^{(-1)}\sim e^{-{\wt\phi}}\,\mu_{\bar i}{}^{j}(X)\,\psi_{j}\,\wt\psi^{\bar i}$ are the large-volume representatives of the bundle and complex-structure vertices (section 3.4), and $V^{(0)}=X\cdot V^{(-1)}$ is obtained by picture-changing. In this limit, (\ref{eq:Atiyah_4pt_LV}) reduces to the contraction of the complex-structure deformation (with $Z_I$ represented by $\mu_I$) with the first curvature variation induced by $\delta A_\varepsilon$, i.e.\ to the cohomology class $[\iota_{Z_I}\,\delta{\cal F}(\delta A_\varepsilon)]\in H^{2}(X,\mathrm{End}\,T_X)$ that appears in the linearized Atiyah constraint (\ref{eq:Atiyah_lin}).
+	
+	More generally, the allowed correlators with three or four current-type insertions encode higher-order terms in the Kuranishi map for deformations of the holomorphic structure on $E\simeq T_X$. In geometric deformation theory these higher obstructions are expressed in terms of iterated brackets and Green's operators (Massey/Yoneda-type products) valued in $H^{2}(X,\mathrm{End}\,T_X)$; in CPT they arise as the $O(\lambda^3)$ contributions to the beta functions for the bundle couplings and are governed precisely by the corresponding NS--NS--NS--NS correlators with two PCO insertions.
+	
+	Similarly, the non-vanishing selection-rule families involving matter/Higgs insertions ($\Lambda=\lambda^{A'}$) admit a large-volume interpretation in terms of bundle-valued cohomology and its variation. For instance, a matter fluctuation is represented by a class $[\alpha]\in H^{1}(X,V_R)$ for an associated bundle $V_R$. Away from the strict $(2,2)$ locus, complex-structure and bundle deformations vary the Dolbeault operator $\bar\partial_{V_R}$; at the linearized level this is encoded by the associated-bundle Atiyah map
+	\ie
+	\alpha_{V_R}([Z])([\alpha]) \;\equiv\; [\iota_Z{\cal F}_{V_R}\cdot \alpha]\;\in\; H^{2}(X,V_R),
+	\fe
+	where ${\cal F}_{V_R}$ is the curvature of the induced connection on $V_R$. When nontrivial, such classes obstruct continuing the corresponding matter direction and are the geometric origin of ``jumping'' phenomena. Higher-order compatibility conditions are expressed by iterated Yoneda/Massey products among the extension classes, and their CFT avatars appear as the allowed 4-point correlators with two or four single-$\lambda$ insertions listed above.
+	
+	
+	\bibliographystyle{JHEP}
+	\bibliography{stringrefs}
 
 
 \end{document}
